@@ -116,7 +116,7 @@ async function main() {
       refreshCycle: 'daily',
       usageLimitations: 'none'
     },
-    warning: 'Official candidate records only. HRSA site status does not establish exact services, fees, pediatric capability, daily hours, language support, or same-day availability. Candidates remain excluded from patient results until CareRoute service verification is complete.',
+    warning: 'Official candidate records only. HRSA site status does not establish exact services, fees, pediatric capability, daily hours, language support, or same-day availability. Candidates remain excluded from patient results until NearSignal service verification is complete.',
     summary,
     candidates
   };

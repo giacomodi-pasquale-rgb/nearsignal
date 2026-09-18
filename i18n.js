@@ -258,6 +258,11 @@ Object.assign(copy.es,{zipPrivacy:'La búsqueda usa el conjunto postal de EE. UU
 Object.assign(copy.pt,{zipPrivacy:'A busca usa a base postal dos EUA incluída no NearSignal e não é enviada a um serviço externo. As coordenadas são aproximadas. Dados: <a href="https://www.geonames.org/" target="_blank" rel="noopener">GeoNames</a>.',zipUnavailable:'Esse CEP não foi reconhecido. Nenhum estado foi aplicado; confira os cinco dígitos e tente novamente.'});
 Object.assign(copy.ht,{zipPrivacy:'Rechèch la sèvi ak done kòd postal Etazini ki nan NearSignal; li pa voye kòd la bay yon lòt sèvis. Kowòdone yo apwoksimatif. Done: <a href="https://www.geonames.org/" target="_blank" rel="noopener">GeoNames</a>.',zipUnavailable:'Nou pa rekonèt kòd postal sa a. Nou pa chwazi okenn eta; verifye senk chif yo epi eseye ankò.'});
 
+Object.assign(copy.en,{pathWho:'WHO',pathSafety:'SAFETY',pathAccess:'ACCESS',pathEvidence:'EVIDENCE',pathEvidenceBody:'Source-linked facts',accessBriefLabel:'ACCESS BRIEF',briefBuilding:'Building',stateInsuranceDirectory:'Find your state insurance department ↗',routingNoVerifiedCandidates:'No decision-ready location matched this search, so there is no verified route to calculate. Distances in the official discovery list are approximate straight-line distances.'});
+Object.assign(copy.es,{pathWho:'QUIÉN',pathSafety:'SEGURIDAD',pathAccess:'ACCESO',pathEvidence:'EVIDENCIA',pathEvidenceBody:'Datos vinculados a fuentes',accessBriefLabel:'RESUMEN DE ACCESO',briefBuilding:'En preparación',stateInsuranceDirectory:'Buscar el departamento de seguros de su estado ↗',routingNoVerifiedCandidates:'Ningún centro listo para decidir coincidió con esta búsqueda, por lo que no hay una ruta verificada que calcular. Las distancias de la lista oficial son aproximadas y en línea recta.'});
+Object.assign(copy.pt,{pathWho:'QUEM',pathSafety:'SEGURANÇA',pathAccess:'ACESSO',pathEvidence:'EVIDÊNCIA',pathEvidenceBody:'Dados ligados às fontes',accessBriefLabel:'RESUMO DE ACESSO',briefBuilding:'Em preparação',stateInsuranceDirectory:'Encontrar o departamento de seguros do seu estado ↗',routingNoVerifiedCandidates:'Nenhum local pronto para decisão correspondeu à busca, portanto não há uma rota verificada para calcular. As distâncias da lista oficial são aproximadas e em linha reta.'});
+Object.assign(copy.ht,{pathWho:'KIYÈS',pathSafety:'SEKIRITE',pathAccess:'AKSÈ',pathEvidence:'PRÈV',pathEvidenceBody:'Done ki lye ak sous yo',accessBriefLabel:'REZIME AKSÈ',briefBuilding:'N ap prepare li',stateInsuranceDirectory:'Jwenn depatman asirans eta ou a ↗',routingNoVerifiedCandidates:'Pa gen okenn kote ki pare pou desizyon ki koresponn ak rechèch sa a, kidonk pa gen wout verifye pou kalkile. Distans nan lis ofisyèl la se distans apwoksimatif an liy dwat.'});
+
 let current = 'en';
 
 export function t(key) { return copy[current]?.[key] || copy.en[key] || key; }
@@ -278,13 +283,13 @@ export function setLanguage(language) {
   });
   document.querySelectorAll('[data-i18n-aria-label]').forEach((element) => { element.setAttribute('aria-label', t(element.dataset.i18nAriaLabel)); });
   document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => { element.setAttribute('placeholder', t(element.dataset.i18nPlaceholder)); });
-  localStorage.setItem('careroute-language', current);
-  document.dispatchEvent(new CustomEvent('careroute:language', { detail: current }));
+  localStorage.setItem('nearsignal-language', current);
+  document.dispatchEvent(new CustomEvent('nearsignal:language', { detail: current }));
 }
 
 export function initLanguage() {
   const select = document.getElementById('languageSelect');
-  const saved = localStorage.getItem('careroute-language');
+  const saved = localStorage.getItem('nearsignal-language') || localStorage.getItem('careroute-language');
   const preferred = copy[saved] ? saved : (copy[navigator.language?.slice(0, 2)] ? navigator.language.slice(0, 2) : 'en');
   select.value = preferred;
   select.addEventListener('change', () => setLanguage(select.value));

@@ -39,7 +39,7 @@ const output = {
       total: canonical.facilities.length,
       evidenceRecords,
       reviewDueSoon,
-      definition: 'CareRoute records that passed release-blocking identity, location, care-setting, patient-group, capability, contact and source checks.',
+      definition: 'NearSignal records that passed release-blocking identity, location, care-setting, patient-group, capability, contact and source checks.',
       patientVisible: true
     }
   },

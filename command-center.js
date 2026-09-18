@@ -5,6 +5,7 @@ const number=new Intl.NumberFormat('en-US');
 const percent=new Intl.NumberFormat('en-US',{style:'percent',maximumFractionDigits:1});
 let activeEvents=syntheticAccessEvents;
 const verifiedFacilities=window.CARE_ROUTE_FACILITIES || [];
+document.getElementById('stressFacilityCount').textContent=number.format(verifiedFacilities.length);
 const stressLabels={population:'Population not verified',age:'Outside verified age limit',setting:'Wrong setting',capability:'Capability not published',distance:'Outside route radius'};
 
 function renderStressTest(){

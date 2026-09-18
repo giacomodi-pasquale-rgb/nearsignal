@@ -1,5 +1,5 @@
 import { RoutingService, presentRoute } from './routing.js?v=2';
-import { currentLanguage, format, initLanguage, t } from './i18n.js?v=19';
+import { currentLanguage, format, initLanguage, t } from './i18n.js?v=20';
 import { translateBriefTextToEnglish } from './brief-translation.js?v=3';
 import { accessEvidence, createArrivalCode, outcomeCount, saveOutcome } from './access-insight.js?v=1';
 import { buildDemoConfirmation, nextAlternative } from './verified-arrival.js?v=1';
@@ -32,10 +32,8 @@ if (evidenceNetwork) {
   document.getElementById('networkReady').textContent = number(evidenceNetwork.tiers.decisionReady.total);
 }
 
-if ('serviceWorker' in navigator) window.addEventListener('load', async () => {
-  const registrations = await navigator.serviceWorker.getRegistrations();
-  await Promise.all(registrations.map((registration) => registration.unregister()));
-  if ('caches' in window) await Promise.all((await caches.keys()).map((key) => caches.delete(key)));
+if ('serviceWorker' in navigator) window.addEventListener('load', () => {
+  navigator.serviceWorker.register('./service-worker.js').catch((error) => console.warn('Offline support unavailable', error));
 });
 window.addEventListener('beforeinstallprompt', (event) => {
   event.preventDefault();
@@ -69,7 +67,7 @@ document.querySelectorAll('[name=patientGroup]').forEach((input) => input.addEve
   document.getElementById('childAge').hidden = input.value !== 'pediatric';
 }));
 document.querySelectorAll('.back').forEach((button) => button.addEventListener('click', () => showStep(state.step - 1)));
-document.addEventListener('careroute:language', async () => {
+document.addEventListener('nearsignal:language', async () => {
   document.getElementById('stateSelect').options[0].textContent=t('allStates');
   showStep(state.step);
   if (!document.getElementById('results').hidden) await renderResults();
@@ -291,7 +289,7 @@ document.getElementById('restartBillPlan').addEventListener('click', () => {
   billIntake.hidden = false;
   billDialog.scrollTo({ top: 0, behavior: 'smooth' });
 });
-document.addEventListener('careroute:language', () => {
+document.addEventListener('nearsignal:language', () => {
   if (!billPlanResult.hidden) document.getElementById('buildBillPlan').click();
 });
 
@@ -341,7 +339,7 @@ document.getElementById('restartMentalRoute').addEventListener('click', () => {
   mentalChoices.hidden = false;
   mentalDialog.scrollTo({ top: 0, behavior: 'smooth' });
 });
-document.addEventListener('careroute:language', () => {
+document.addEventListener('nearsignal:language', () => {
   if (selectedMentalRoute) showMentalRoute(selectedMentalRoute);
 });
 
@@ -546,7 +544,7 @@ document.getElementById('listenEnglishBrief').addEventListener('click', () => {
   window.speechSynthesis.speak(utterance);
   status.textContent = t('readingEnglishBrief');
 });
-document.addEventListener('careroute:language', () => {
+document.addEventListener('nearsignal:language', () => {
   if (!arrivalResult.hidden) buildArrivalBrief();
 });
 
@@ -671,14 +669,26 @@ function facilityCard(facility, index, inputs) {
   </article>`;
 }
 
+function safeExternalUrl(value) {
+  if (!value) return '';
+  try {
+    const candidate = /^https?:\/\//i.test(value) ? value : `https://${value}`;
+    const url = new URL(candidate);
+    return ['http:', 'https:'].includes(url.protocol) ? url.href : '';
+  } catch {
+    return '';
+  }
+}
+
 function discoveryCard(record){
   const address=[record.address,record.city,record.state,record.zip].filter(Boolean).join(', ');
   const directions=`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`;
   const kind=t(record.kind==='hospital'?'discoveryHospital':'discoveryHealthCenter');
   const proximity=record.distance!==null?`<span>${format('discoveryApproxMiles',{n:Math.round(record.distance)})}</span>`:record.zip?.slice(0,5)===state.locationZip?`<span>${t('discoverySameZip')}</span>`:'';
   const source=discoverySource(record);
+  const website=safeExternalUrl(record.website);
   const resolved=2+(record.phone?1:0);
-  return `<article><div class="discovery-card-top"><div><span class="discovery-kind">${escapeHtml(kind)}</span><h4>${escapeHtml(record.name)}</h4><p>${escapeHtml(address)}</p></div><b>${t('discoveryTierOfficial')}</b></div><div class="discovery-meta">${proximity}${record.kind==='health-center'?`<span>${t('discoveryAffordableCandidate')}</span>`:`<span>${t('discoveryEmergencyReported')}</span>`}</div><div class="discovery-progress"><span style="--progress:${resolved/7*100}%"></span><b>${format('discoveryEvidenceCount',{resolved})}</b></div><details class="discovery-needed"><summary>${t('discoveryNeededTitle')}</summary><div><span>✓ ${t('discoveryIdentityResolved')}</span><span>✓ ${t('discoveryLocationResolved')}</span>${record.phone?`<span>✓ ${t('discoveryContactResolved')}</span>`:`<span>○ ${t('discoveryContactNeeded')}</span>`}<span>○ ${t('discoveryPopulationNeeded')}</span><span>○ ${t('discoveryServicesNeeded')}</span><span>○ ${t('discoveryHoursNeeded')}</span><span>○ ${t('discoveryAccessNeeded')}</span></div></details><p class="discovery-unknown">${t('discoveryUnknown')}</p><div class="discovery-actions"><a href="${directions}" target="_blank" rel="noopener">${t('directions')}</a>${record.phone?`<a href="tel:${record.phone.replace(/\D/g,'')}">${t('call')}</a>`:''}${record.website?`<a href="${escapeHtml(record.website)}" target="_blank" rel="noopener">${t('providerWebsite')}</a>`:''}<a href="${source}" target="_blank" rel="noopener">${t('officialSource')}</a></div></article>`;
+  return `<article><div class="discovery-card-top"><div><span class="discovery-kind">${escapeHtml(kind)}</span><h4>${escapeHtml(record.name)}</h4><p>${escapeHtml(address)}</p></div><b>${t('discoveryTierOfficial')}</b></div><div class="discovery-meta">${proximity}${record.kind==='health-center'?`<span>${t('discoveryAffordableCandidate')}</span>`:`<span>${t('discoveryEmergencyReported')}</span>`}</div><div class="discovery-progress"><span style="--progress:${resolved/7*100}%"></span><b>${format('discoveryEvidenceCount',{resolved})}</b></div><details class="discovery-needed"><summary>${t('discoveryNeededTitle')}</summary><div><span>✓ ${t('discoveryIdentityResolved')}</span><span>✓ ${t('discoveryLocationResolved')}</span>${record.phone?`<span>✓ ${t('discoveryContactResolved')}</span>`:`<span>○ ${t('discoveryContactNeeded')}</span>`}<span>○ ${t('discoveryPopulationNeeded')}</span><span>○ ${t('discoveryServicesNeeded')}</span><span>○ ${t('discoveryHoursNeeded')}</span><span>○ ${t('discoveryAccessNeeded')}</span></div></details><p class="discovery-unknown">${t('discoveryUnknown')}</p><div class="discovery-actions"><a href="${directions}" target="_blank" rel="noopener">${t('directions')}</a>${record.phone?`<a href="tel:${record.phone.replace(/\D/g,'')}">${t('call')}</a>`:''}${website?`<a href="${escapeHtml(website)}" target="_blank" rel="noopener">${t('providerWebsite')}</a>`:''}<a href="${source}" target="_blank" rel="noopener">${t('officialSource')}</a></div></article>`;
 }
 
 function renderCommonSpiritCohort(inputs){
@@ -754,9 +764,11 @@ async function renderResults() {
   document.getElementById('journeySummary').innerHTML = journeySummary(inputs);
   document.getElementById('routingNote').textContent = routed
     ? t('routingReady')
-    : state.location
+    : state.location && initialAnalysis.eligible.length
       ? t('routingFailed')
-      : t('routingOptional');
+      : state.location
+        ? t('routingNoVerifiedCandidates')
+        : t('routingOptional');
   renderAccessXray(analysis,inputs,routed);
   const visible = state.showAllResults ? eligible : eligible.slice(0, 3);
   const resultControls = eligible.length > 3

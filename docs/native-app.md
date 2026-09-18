@@ -1,6 +1,6 @@
 # Native application path
 
-NearSignal is now an installable Progressive Web App. The Capacitor configuration reserves `org.careroute.pediatric` as the native bundle identifier and lets the reviewed web experience become iOS and Android projects.
+NearSignal is now an installable Progressive Web App. The Capacitor configuration reserves `org.nearsignal.health` as the native bundle identifier and lets the reviewed web experience become iOS and Android projects.
 
 Before generating store projects:
 

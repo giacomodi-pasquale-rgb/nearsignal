@@ -185,3 +185,16 @@
 .discovery-empty { grid-column:1/-1; }
 .discovery-more { grid-column:1/-1;justify-self:center;margin-top:8px; }
 @media(max-width:700px){.discovery-heading{flex-direction:column}.discovery-heading>span{flex:auto}.discovery-counts{grid-template-columns:1fr}.discovery-cards{grid-template-columns:1fr}.national-discovery{padding:19px}.discovery-card-top{flex-direction:column}.discovery-needed>div{grid-template-columns:1fr}}
+
+/* Keep every programmatically hidden control out of layout, even when a component declares display. */
+[hidden] { display: none !important; }
+
+@media (max-width: 650px) {
+  .topbar { height: auto; min-height: 62px; padding-block: 10px; flex-direction: column; align-items: stretch; gap: 9px; }
+  .topbar .brand { align-self: flex-start; }
+  .topbar-actions { width: 100%; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 5px; }
+  .topbar-actions > button { min-width: 0; padding-inline: 5px; }
+  .language-picker { grid-column: 1 / -1; }
+  .language-picker select { max-width: none; padding-block: 9px; }
+  .install-button { grid-column: 1 / -1; }
+}
