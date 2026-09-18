@@ -15,7 +15,7 @@ NearSignal is a production-oriented, mobile-first foundation for national care n
 - A translated cost-access guide distinguishing FQHC full discounts or nominal charges, NJ hospital Charity Care, and service-specific published flat fees
 - Provider-sourced identity, address, phone, care setting, adult/child population, services, and published hours
 - Browser geolocation, with location kept in memory only
-- Optional five-digit ZIP lookup as an alternative to browser geolocation; the ZIP is sent to Zippopotam.us for an approximate area, used in memory for routing, and not stored by NearSignal
+- Optional five-digit ZIP lookup as an alternative to browser geolocation, backed by 41,202 bundled postal records covering every jurisdiction in the national menu so state selection and approximate routing work without sending the ZIP to a third-party lookup service
 - Sourced road-network distance, drive duration, and estimated arrival time, including explicit provider, timestamp, and traffic-awareness status
 - Conservative emergency gating: adult emergency searches show verified adult EDs; child searches require pediatric-specific emergency capability
 - Direct provider-source, calling, and navigation links
@@ -116,6 +116,7 @@ Data reviewed: September 14, 2026.
 - [Summit Health Livingston Urgent Care](https://www.summithealth.com/locations/livingston-summit-health-urgent-care)
 - [NJ Department of Health Hospital Performance Report](https://web.doh.nj.gov/apps2/hpr/hospitals.aspx)
 - Coordinates: [OpenStreetMap contributors](https://www.openstreetmap.org/copyright)
+- ZIP place names and approximate coordinates: [GeoNames postal-code data](https://www.geonames.org/), used under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ## Run locally
 

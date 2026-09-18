@@ -1,10 +1,11 @@
 import { RoutingService, presentRoute } from './routing.js?v=2';
-import { currentLanguage, format, initLanguage, t } from './i18n.js?v=18';
+import { currentLanguage, format, initLanguage, t } from './i18n.js?v=19';
 import { translateBriefTextToEnglish } from './brief-translation.js?v=3';
 import { accessEvidence, createArrivalCode, outcomeCount, saveOutcome } from './access-insight.js?v=1';
 import { buildDemoConfirmation, nextAlternative } from './verified-arrival.js?v=1';
 import { analyzeAccess, XRAY_REASON_ORDER } from './access-xray.js?v=1';
 import { discoverySource, loadDiscoveryState, rankDiscoveryRecords } from './national-discovery.js?v=1';
+import { lookupZip } from './zip-lookup.js?v=1';
 
 const facilities = window.CARE_ROUTE_FACILITIES;
 const commonspiritBatch = window.NEARSIGNAL_PROVIDER_ENRICHMENT;
@@ -13,6 +14,7 @@ const state = { step: 1, location: null, locationSource: null, locationZip: null
 const MAX_SEARCH_MILES = 100;
 const NATIONAL_PLACES=[['AL','Alabama'],['AK','Alaska'],['AS','American Samoa'],['AZ','Arizona'],['AR','Arkansas'],['CA','California'],['CO','Colorado'],['CT','Connecticut'],['DE','Delaware'],['DC','District of Columbia'],['FL','Florida'],['GA','Georgia'],['GU','Guam'],['HI','Hawaii'],['ID','Idaho'],['IL','Illinois'],['IN','Indiana'],['IA','Iowa'],['KS','Kansas'],['KY','Kentucky'],['LA','Louisiana'],['ME','Maine'],['MD','Maryland'],['MA','Massachusetts'],['MI','Michigan'],['FM','Micronesia'],['MN','Minnesota'],['MS','Mississippi'],['MO','Missouri'],['MT','Montana'],['NE','Nebraska'],['NV','Nevada'],['NH','New Hampshire'],['NJ','New Jersey'],['NM','New Mexico'],['NY','New York'],['NC','North Carolina'],['ND','North Dakota'],['MP','Northern Mariana Islands'],['OH','Ohio'],['OK','Oklahoma'],['OR','Oregon'],['PA','Pennsylvania'],['PR','Puerto Rico'],['RI','Rhode Island'],['SC','South Carolina'],['SD','South Dakota'],['TN','Tennessee'],['TX','Texas'],['UT','Utah'],['VT','Vermont'],['VI','U.S. Virgin Islands'],['VA','Virginia'],['WA','Washington'],['WV','West Virginia'],['WI','Wisconsin'],['WY','Wyoming'],['MH','Marshall Islands'],['PW','Palau']];
 const NATIONAL_CODES=new Set(NATIONAL_PLACES.map(([code])=>code));
+const NATIONAL_NAMES=new Map(NATIONAL_PLACES);
 let installPrompt = null;
 const steps = [...document.querySelectorAll('.step')];
 const titleKeys = ['step1', 'step2', 'step3', 'step4'];
@@ -55,7 +57,11 @@ function showStep(number) {
   document.getElementById('progressBar').style.width = `${number * 25}%`;
 }
 
-document.querySelectorAll('.next').forEach((button) => button.addEventListener('click', () => {
+document.querySelectorAll('.next').forEach((button) => button.addEventListener('click', async () => {
+  if (state.step === 1) {
+    const zip = document.getElementById('zipCode').value.trim();
+    if (zip && state.locationZip !== zip && !(await applyZip())) return;
+  }
   if (state.step === 1 && document.querySelector('[name=patientGroup]:checked').value === 'pediatric' && !document.getElementById('ageValue').reportValidity()) return;
   showStep(state.step + 1);
 }));
@@ -86,7 +92,7 @@ document.getElementById('stateSelect').addEventListener('change', () => {
   document.getElementById('zipStatus').classList.remove('success');
 });
 
-document.getElementById('useZip').addEventListener('click', async () => {
+async function applyZip() {
   state.demoScenario = false;
   const input = document.getElementById('zipCode');
   const button = document.getElementById('useZip');
@@ -96,38 +102,44 @@ document.getElementById('useZip').addEventListener('click', async () => {
   if (!/^\d{5}$/.test(zip)) {
     status.textContent = t('zipInvalid');
     input.focus();
-    return;
+    return false;
   }
+  clearLocation();
+  document.getElementById('stateSelect').value = '';
   button.disabled = true;
   status.textContent = t('zipFinding');
-  const controller = new AbortController();
-  const timeout = window.setTimeout(() => controller.abort(), 10000);
   try {
-    const response = await fetch(`https://api.zippopotam.us/us/${zip}`, { signal: controller.signal });
-    if (!response.ok) throw new Error('ZIP not found');
-    const data = await response.json();
-    const place = data.places?.[0];
-    const region = place?.['state abbreviation'];
-    const lat = Number(place?.latitude);
-    const lon = Number(place?.longitude);
-    if (!NATIONAL_CODES.has(region)) {
-      clearLocation();
-      status.textContent = t('zipOutside');
-      return;
-    }
+    const { place, region, lat, lon } = await lookupZip(zip);
+    if (!NATIONAL_CODES.has(region) || !Number.isFinite(lat) || !Number.isFinite(lon)) throw new Error('zip-outside');
     document.getElementById('stateSelect').value = region;
     state.location = { lat, lon };
     state.locationSource = 'zip';
     state.locationZip = zip;
-    status.textContent = format('zipReady', { zip, place: place['place name'] });
+    status.textContent = format('zipReady', { zip, place: `${place}, ${NATIONAL_NAMES.get(region) || region}` });
     status.classList.add('success');
+    return true;
   } catch (error) {
     clearLocation();
-    status.textContent = t('zipUnavailable');
+    document.getElementById('stateSelect').value = '';
+    status.textContent = error.message === 'zip-outside' ? t('zipOutside') : t('zipUnavailable');
+    return false;
   } finally {
-    window.clearTimeout(timeout);
     button.disabled = false;
   }
+}
+
+document.getElementById('useZip').addEventListener('click', applyZip);
+document.getElementById('zipCode').addEventListener('keydown', (event) => {
+  if (event.key !== 'Enter') return;
+  event.preventDefault();
+  applyZip();
+});
+document.getElementById('zipCode').addEventListener('input', (event) => {
+  if (!state.locationZip || event.currentTarget.value.trim() === state.locationZip) return;
+  clearLocation();
+  document.getElementById('stateSelect').value = '';
+  document.getElementById('zipStatus').textContent = '';
+  document.getElementById('zipStatus').classList.remove('success');
 });
 
 document.getElementById('locateMe').addEventListener('click', () => {
@@ -596,7 +608,9 @@ function journeySummary(inputs) {
     t(inputs.patientGroup === 'adult' ? 'summaryAdult' : 'summaryChild'),
     t(needKeys[inputs.need]),
     t(inputs.emergency ? 'summaryEmergency' : 'summaryNonEmergency'),
-    inputs.selectedState ? t(`state${inputs.selectedState}`) : t('allStates')
+    inputs.selectedState
+      ? (t(`state${inputs.selectedState}`) === `state${inputs.selectedState}` ? NATIONAL_NAMES.get(inputs.selectedState) : t(`state${inputs.selectedState}`))
+      : t('allStates')
   ];
   if (inputs.accessNeeds.has('uninsured')) chips.push(t('summaryUninsured'));
   if (inputs.accessNeeds.has('low-cost')) chips.push(t('summaryLowCost'));
