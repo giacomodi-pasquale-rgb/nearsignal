@@ -3,6 +3,7 @@ import { currentLanguage, format, initLanguage, t } from './i18n.js?v=20';
 import { translateBriefTextToEnglish } from './brief-translation.js?v=3';
 import { accessEvidence, createArrivalCode, outcomeCount, saveOutcome } from './access-insight.js?v=1';
 import { buildDemoConfirmation, nextAlternative } from './verified-arrival.js?v=1';
+import { savePatientPass, loadPatientPass, deletePatientPass } from './patient-pass.js?v=1';
 import { analyzeAccess, XRAY_REASON_ORDER } from './access-xray.js?v=1';
 import { discoverySource, loadDiscoveryState, rankDiscoveryRecords } from './national-discovery.js?v=1';
 import { lookupZip } from './zip-lookup.js?v=1';
@@ -361,6 +362,51 @@ const englishArrivalValues = {
 };
 let activeRecognition = null;
 let currentArrivalCode = '';
+let currentPatientPass = null;
+
+function patientPassInput() {
+  return {
+    code: currentArrivalCode,
+    language: currentLanguage(),
+    patient: document.getElementById('arrivalPatient').value,
+    category: document.getElementById('arrivalCategory').value,
+    severity: document.getElementById('arrivalSeverity').value,
+    warning: document.getElementById('arrivalWarning').value,
+    concern: document.getElementById('arrivalConcern').value,
+    started: document.getElementById('arrivalStarted').value,
+    medications: document.getElementById('arrivalMedications').value
+  };
+}
+
+function patientPassExpiry(pass) {
+  return new Intl.DateTimeFormat(currentLanguage(), {
+    dateStyle: 'medium', timeStyle: 'short'
+  }).format(new Date(pass.expiresAt));
+}
+
+function updatePatientPassUI() {
+  currentPatientPass = loadPatientPass(localStorage);
+  const launcher = document.getElementById('savedPatientPass');
+  const status = document.getElementById('patientPassStatus');
+  launcher.hidden = !currentPatientPass;
+  status.hidden = !currentPatientPass || currentPatientPass.code !== currentArrivalCode;
+  if (!currentPatientPass) return;
+  document.getElementById('savedPatientPassCode').textContent = currentPatientPass.code;
+  document.getElementById('savedPatientPassExpiry').textContent = format('patientPassExpires', { time: patientPassExpiry(currentPatientPass) });
+  document.getElementById('patientPassExpiry').textContent = format('patientPassExpires', { time: patientPassExpiry(currentPatientPass) });
+}
+
+function restorePatientPass(pass) {
+  document.getElementById('arrivalPatient').value = pass.patient;
+  document.getElementById('arrivalCategory').value = pass.category;
+  document.getElementById('arrivalSeverity').value = pass.severity;
+  document.getElementById('arrivalWarning').value = pass.warning;
+  document.getElementById('arrivalConcern').value = pass.concern;
+  document.getElementById('arrivalStarted').value = pass.started;
+  document.getElementById('arrivalMedications').value = pass.medications;
+  currentArrivalCode = pass.code;
+  buildArrivalBrief();
+}
 
 function openArrivalBrief() {
   currentArrivalCode = '';
@@ -378,6 +424,19 @@ function openArrivalBrief() {
   }
   arrivalDialog.setAttribute('open', '');
   arrivalDialog.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function openSavedPatientPass() {
+  const pass = loadPatientPass(localStorage);
+  if (!pass) {
+    updatePatientPassUI();
+    return;
+  }
+  setCheckinMode(false);
+  if (typeof arrivalDialog.showModal === 'function') {
+    try { arrivalDialog.showModal(); } catch { arrivalDialog.setAttribute('open', ''); }
+  } else arrivalDialog.setAttribute('open', '');
+  restorePatientPass(pass);
 }
 
 function setCheckinMode(enabled) {
@@ -441,12 +500,37 @@ function buildArrivalBrief() {
   document.getElementById('dictationStatus').textContent = '';
   arrivalIntake.hidden = true;
   arrivalResult.hidden = false;
+  updatePatientPassUI();
   arrivalResult.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 document.getElementById('openArrivalBrief').addEventListener('click', openArrivalBrief);
 document.getElementById('openArrivalBriefHero').addEventListener('click', openArrivalBrief);
 document.getElementById('buildArrivalBrief').addEventListener('click', buildArrivalBrief);
+document.getElementById('savedPatientPass').addEventListener('click', openSavedPatientPass);
+document.getElementById('savePatientPass').addEventListener('click', () => {
+  const consent = document.getElementById('patientPassConsent');
+  const status = document.getElementById('arrivalActionStatus');
+  if (!consent.checked) {
+    status.textContent = t('patientPassConsentRequired');
+    consent.focus();
+    return;
+  }
+  try {
+    currentPatientPass = savePatientPass(localStorage, patientPassInput());
+    updatePatientPassUI();
+    status.textContent = t('patientPassSaved');
+  } catch {
+    status.textContent = t('patientPassSaveFailed');
+  }
+});
+document.getElementById('deletePatientPass').addEventListener('click', () => {
+  deletePatientPass(localStorage);
+  currentPatientPass = null;
+  document.getElementById('patientPassConsent').checked = false;
+  updatePatientPassUI();
+  document.getElementById('arrivalActionStatus').textContent = t('patientPassDeleted');
+});
 document.getElementById('editArrivalBrief').addEventListener('click', () => {
   setCheckinMode(false);
   arrivalResult.hidden = true;
@@ -548,7 +632,10 @@ document.getElementById('listenEnglishBrief').addEventListener('click', () => {
 });
 document.addEventListener('nearsignal:language', () => {
   if (!arrivalResult.hidden) buildArrivalBrief();
+  updatePatientPassUI();
 });
+
+updatePatientPassUI();
 
 function getInputs() {
   const value = Number(document.getElementById('ageValue').value);

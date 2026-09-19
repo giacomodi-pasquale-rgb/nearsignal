@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="install.css">
   <link rel="stylesheet" href="access.css?v=11">
-  <link rel="stylesheet" href="brand.css?v=4">
+  <link rel="stylesheet" href="brand.css?v=5">
   <link rel="stylesheet" href="insights.css?v=2">
   <link rel="stylesheet" href="outcome-extra.css?v=1">
   <link rel="stylesheet" href="cohort.css?v=1">
@@ -52,6 +52,7 @@
       <div class="hero-actions"><a class="primary link-button" href="#questionnaire" data-i18n="startNavigation">Find care options</a><button id="tryDemo" class="demo-button" type="button" data-i18n="tryDemo">▶ Try a 30-second demo</button></div>
       <p class="demo-helper" data-i18n="demoHelper">See NearSignal build an access brief for a parent in Newark seeking affordable care for a sick child.</p>
       <button id="openArrivalBriefHero" class="arrival-brief-card" type="button"><span class="arrival-icon" aria-hidden="true">🎙</span><span><b data-i18n="arrivalCardTitle">Create a pre-arrival brief</b><small data-i18n="arrivalCardBody">Write or speak. Review a clear summary before showing it to the care team.</small></span><em data-i18n="arrivalCardAction">Create brief →</em></button>
+      <button id="savedPatientPass" class="saved-pass-card" type="button" hidden><span class="saved-pass-icon" aria-hidden="true">▣</span><span><b data-i18n="savedPassTitle">Your patient-held pass is ready</b><small><span id="savedPatientPassCode">NS------</span> · <span id="savedPatientPassExpiry"></span></small></span><em data-i18n="openSavedPass">Open pass →</em></button>
       <button id="openBillHelpHero" class="bill-protection-card" type="button"><span class="bill-icon" aria-hidden="true">$</span><span><b data-i18n="billCardTitle">Unexpected medical bill?</b><small data-i18n="billCardBody">Build a protection plan before a deadline passes.</small></span><em data-i18n="billCardAction">Start →</em></button>
       <button id="openMentalHelpHero" class="mental-support-card" type="button"><span class="mental-icon" aria-hidden="true">♥</span><span><b data-i18n="mentalCardTitle">Mental health support now?</b><small data-i18n="mentalCardBody">Choose the safest next step for an adult or young person.</small></span><em data-i18n="mentalCardAction">Get support →</em></button>
       <div class="proof-stats" aria-label="Pilot at a glance" data-i18n-aria-label="proofLabel">
@@ -288,6 +289,13 @@
           <section><h4 data-i18n="englishHandoffBrief">Standardized English handoff</h4><div id="arrivalEnglishBrief" class="arrival-brief-text english-handoff"></div></section>
         </div>
         <div class="arrival-code"><span data-i18n="arrivalCodeLabel">Patient-controlled arrival code</span><strong id="arrivalCode">NS------</strong><small data-i18n="arrivalCodeHelp">Pilot demonstration only. This code identifies the brief on this device; it does not retrieve hospital records or mean the brief was transmitted.</small></div>
+        <section class="patient-pass-save" aria-labelledby="patient-pass-title">
+          <div><span class="pass-mini-mark" aria-hidden="true">▣</span><div><h4 id="patient-pass-title" data-i18n="patientPassTitle">Keep this brief on this device</h4><p data-i18n="patientPassBody">Save a private patient-held pass for 24 hours so you can close NearSignal and reopen it at check-in. Nothing is sent to NearSignal or the hospital.</p></div></div>
+          <label class="patient-pass-consent"><input id="patientPassConsent" type="checkbox"><span data-i18n="patientPassConsent">I understand this brief contains sensitive information and should only be saved on a device I control.</span></label>
+          <button id="savePatientPass" class="primary" type="button" value="" data-i18n="savePatientPass">Save patient-held pass</button>
+          <small data-i18n="patientPassCaution">Anyone who can unlock this device and open NearSignal may be able to view the pass. Browser storage can also be cleared, so this is not a permanent medical record.</small>
+        </section>
+        <div id="patientPassStatus" class="patient-pass-status" hidden><div><b data-i18n="patientPassStored">Saved privately on this device</b><span id="patientPassExpiry"></span></div><button id="deletePatientPass" class="text-danger" type="button" value="" data-i18n="deletePatientPass">Delete pass permanently</button></div>
         <p class="translation-boundary" data-i18n="translationBoundary">NearSignal creates a local draft English rendering for common terms and preserves the patient's original words when it is unsure. Staff should review it with the patient and use a qualified interpreter when needed.</p>
         <p class="arrival-disclaimer" data-i18n="arrivalDisclaimer">This summary contains information reported by a patient or caregiver. It has not been medically verified. In an emergency, call 911 rather than relying on this brief.</p>
         <div class="arrival-actions"><button id="useBriefForSearch" class="primary" type="button" value="" data-i18n="useBriefForSearch">Find care using this brief</button><button id="showAtCheckIn" class="primary checkin-button" type="button" value="" data-i18n="showAtCheckIn">Show at check-in</button><button id="copyArrivalBrief" class="secondary" type="button" value="" data-i18n="copyBrief">Copy both briefs</button><button id="listenArrivalBrief" class="secondary" type="button" value="" data-i18n="listenBrief">🔊 Listen</button><button id="listenEnglishBrief" class="secondary" type="button" value="" data-i18n="listenEnglishBrief">🔊 Listen in English</button><button id="editArrivalBrief" class="secondary" type="button" value="" data-i18n="editBrief">Edit</button><button id="exitCheckinMode" class="secondary exit-checkin" type="button" value="" hidden data-i18n="exitCheckin">Back to brief options</button></div>
@@ -368,6 +376,6 @@
   <script src="data/facilities.js?v=10"></script>
   <script src="data/review/evidence-network.js?v=4"></script>
   <script src="data/review/provider-enrichment.js?v=4"></script>
-  <script type="module" src="app.js?v=51"></script>
+  <script type="module" src="app.js?v=52"></script>
 </body>
 </html>
