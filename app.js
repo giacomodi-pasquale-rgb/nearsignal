@@ -79,7 +79,7 @@ function clearLocation() {
   state.locationSource = null;
   state.locationZip = null;
   state.routes.clear();
-  document.getElementById('locationStatus').textContent = '';
+  document.getElementById('locationStatus').textContent = t('locationOptional');
   document.getElementById('locationStatus').classList.remove('success');
 }
 
@@ -221,6 +221,8 @@ async function showCareOptions(button) {
 document.getElementById('startOver').addEventListener('click', () => {
   state.showAllResults = false;
   state.demoScenario = false;
+  document.getElementById('careForm').reset();
+  document.getElementById('childAge').hidden = true;
   clearLocation();
   document.getElementById('zipCode').value = '';
   document.getElementById('zipStatus').textContent = '';
