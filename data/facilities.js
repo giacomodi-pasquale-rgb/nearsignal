@@ -1,7 +1,7 @@
 // Generated from data/v1/facilities.json. Do not edit by hand.
 window.CARE_ROUTE_DATASET = {
-  "datasetVersion": "2026-09-14.1",
-  "reviewedAt": "2026-09-14"
+  "datasetVersion": "2026-09-27.1",
+  "reviewedAt": "2026-09-27"
 };
 window.CARE_ROUTE_FACILITIES = [
   {
@@ -7187,5 +7187,47 @@ window.CARE_ROUTE_FACILITIES = [
       "reviewBy": "2026-12-14",
       "method": "cms-match-and-authoritative-provider-source"
     }
+  },
+  {
+    "id": "richmond-university-medical-center-ed",
+    "name": "Richmond University Medical Center Emergency Department",
+    "city": "Staten Island",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": ["adult", "pediatric"],
+    "address": "355 Bard Avenue, Staten Island, NY 10310",
+    "coordinates": { "lat": 40.635877, "lon": -74.105557 },
+    "phone": "(718) 818-1234",
+    "age": { "minMonths": null, "maxMonths": null, "verifiedLimits": false },
+    "capabilities": ["illness", "breathing", "injury", "wound", "stomach", "other"],
+    "hours": { "kind": "always", "label": "Open 24 hours", "days": {} },
+    "highlights": ["New York State Level I adult trauma center", "New York State Level II pediatric trauma center", "Dedicated pediatric-friendly emergency area"],
+    "sourceUrl": "https://www.rumcsi.org/services/emergency-services/new-emergency-department/",
+    "quality": { "note": "No comparable public emergency-care quality score is displayed.", "url": "https://profiles.health.ny.gov/hospital/printview/102919" },
+    "access": { "uninsuredWelcome": false, "slidingFee": false, "noOneTurnedAway": false, "charityCare": false, "flatFee": null, "languages": [], "note": null, "sourceUrl": null },
+    "verification": { "status": "verified-with-unknowns", "reviewedAt": "2026-09-27", "reviewBy": "2026-12-27", "method": "cms-match-authoritative-provider-and-state-sources" }
+  },
+  {
+    "id": "staten-island-university-hospital-north-ed",
+    "name": "Staten Island University Hospital North Emergency Department",
+    "city": "Staten Island",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": ["adult", "pediatric"],
+    "address": "475 Seaview Avenue, Staten Island, NY 10305",
+    "coordinates": { "lat": 40.584781, "lon": -74.086089 },
+    "phone": "(718) 226-9000",
+    "age": { "minMonths": null, "maxMonths": null, "verifiedLimits": false },
+    "capabilities": ["illness", "breathing", "injury", "wound", "stomach", "other"],
+    "hours": { "kind": "always", "label": "Open 24 hours", "days": {} },
+    "highlights": ["New York State Level I adult trauma center", "New York State Level II pediatric trauma center", "North Campus hospital emergency department"],
+    "sourceUrl": "https://www.northwell.edu/find-care/locations/staten-island-university-hospital",
+    "quality": { "note": "No comparable public emergency-care quality score is displayed.", "url": "https://profiles.health.ny.gov/hospital/view/102989" },
+    "access": { "uninsuredWelcome": false, "slidingFee": false, "noOneTurnedAway": false, "charityCare": false, "flatFee": null, "languages": [], "note": null, "sourceUrl": null },
+    "verification": { "status": "verified-with-unknowns", "reviewedAt": "2026-09-27", "reviewBy": "2026-12-27", "method": "cms-match-authoritative-provider-and-state-sources" }
   }
 ];

@@ -13,7 +13,7 @@ export async function readDataset(path = new URL('../data/v1/facilities.json', i
   return {
     ...dataset,
     datasetVersion: DATASET_VERSION,
-    reviewedAt: '2026-09-14',
+    reviewedAt: '2026-09-27',
     facilities: [...dataset.facilities, ...expandUrgentCareLocations()]
   };
 }

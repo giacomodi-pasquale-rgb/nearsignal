@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
-  "datasetVersion": "2026-09-14.1",
-  "reviewedAt": "2026-09-14",
+  "datasetVersion": "2026-09-27.1",
+  "reviewedAt": "2026-09-27",
   "facilities": [
     {
       "id": "cooperman-barnabas-peds-ed",
@@ -6481,6 +6481,233 @@
             "patientGroups"
           ],
           "checkedAt": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "id": "richmond-university-medical-center-ed",
+      "externalIds": {
+        "cmsCcn": "330028"
+      },
+      "identity": {
+        "name": "Richmond University Medical Center Emergency Department",
+        "organization": "Richmond University Medical Center",
+        "type": "emergency",
+        "typeLabel": "Adult and pediatric emergency department",
+        "pediatricSpecific": true,
+        "patientGroups": [
+          "adult",
+          "pediatric"
+        ]
+      },
+      "location": {
+        "address1": "355 Bard Avenue",
+        "city": "Staten Island",
+        "state": "NY",
+        "postalCode": "10310",
+        "latitude": 40.635877,
+        "longitude": -74.105557
+      },
+      "contact": {
+        "phone": "7188181234",
+        "website": "https://www.rumcsi.org/services/emergency-services/new-emergency-department/",
+        "bookingUrl": null
+      },
+      "pediatricAge": {
+        "minimumMonths": null,
+        "maximumMonths": null,
+        "limitsVerified": false
+      },
+      "capabilities": [
+        "illness",
+        "breathing",
+        "injury",
+        "wound",
+        "stomach",
+        "other"
+      ],
+      "hours": {
+        "kind": "always",
+        "timezone": "America/New_York",
+        "label": "Open 24 hours",
+        "weekly": {}
+      },
+      "highlights": [
+        "New York State Level I adult trauma center",
+        "New York State Level II pediatric trauma center",
+        "Dedicated pediatric-friendly emergency area"
+      ],
+      "live": {
+        "waitMinutes": null,
+        "acceptingPatients": null
+      },
+      "insurance": {
+        "status": "verify",
+        "plans": []
+      },
+      "quality": {
+        "displayScore": null,
+        "note": "No comparable public emergency-care quality score is displayed.",
+        "sourceUrl": "https://profiles.health.ny.gov/hospital/printview/102919"
+      },
+      "verification": {
+        "status": "verified-with-unknowns",
+        "reviewedAt": "2026-09-27",
+        "reviewBy": "2026-12-27",
+        "method": "cms-match-authoritative-provider-and-state-sources"
+      },
+      "evidence": [
+        {
+          "id": "rumc-main-hospital-provider",
+          "url": "https://www.rumcsi.org/locations/main-hospital/",
+          "publisher": "Richmond University Medical Center",
+          "supports": [
+            "identity",
+            "location",
+            "contact",
+            "hours"
+          ],
+          "checkedAt": "2026-09-27"
+        },
+        {
+          "id": "rumc-emergency-provider",
+          "url": "https://www.rumcsi.org/services/emergency-services/new-emergency-department/",
+          "publisher": "Richmond University Medical Center",
+          "supports": [
+            "identity",
+            "location",
+            "capabilities",
+            "highlights",
+            "patientGroups"
+          ],
+          "checkedAt": "2026-09-27"
+        },
+        {
+          "id": "rumc-nys-trauma-designation",
+          "url": "https://www.health.ny.gov/professionals/ems/state_trauma/trauma2.htm",
+          "publisher": "New York State Department of Health",
+          "supports": [
+            "identity",
+            "location",
+            "capabilities",
+            "highlights",
+            "patientGroups"
+          ],
+          "checkedAt": "2026-09-27"
+        }
+      ]
+    },
+    {
+      "id": "staten-island-university-hospital-north-ed",
+      "externalIds": {
+        "cmsCcn": "330160"
+      },
+      "identity": {
+        "name": "Staten Island University Hospital North Emergency Department",
+        "organization": "Northwell Health",
+        "type": "emergency",
+        "typeLabel": "Adult and pediatric emergency department",
+        "pediatricSpecific": true,
+        "patientGroups": [
+          "adult",
+          "pediatric"
+        ]
+      },
+      "location": {
+        "address1": "475 Seaview Avenue",
+        "city": "Staten Island",
+        "state": "NY",
+        "postalCode": "10305",
+        "latitude": 40.584781,
+        "longitude": -74.086089
+      },
+      "contact": {
+        "phone": "7182269000",
+        "website": "https://www.northwell.edu/find-care/locations/staten-island-university-hospital",
+        "bookingUrl": null
+      },
+      "pediatricAge": {
+        "minimumMonths": null,
+        "maximumMonths": null,
+        "limitsVerified": false
+      },
+      "capabilities": [
+        "illness",
+        "breathing",
+        "injury",
+        "wound",
+        "stomach",
+        "other"
+      ],
+      "hours": {
+        "kind": "always",
+        "timezone": "America/New_York",
+        "label": "Open 24 hours",
+        "weekly": {}
+      },
+      "highlights": [
+        "New York State Level I adult trauma center",
+        "New York State Level II pediatric trauma center",
+        "North Campus hospital emergency department"
+      ],
+      "live": {
+        "waitMinutes": null,
+        "acceptingPatients": null
+      },
+      "insurance": {
+        "status": "verify",
+        "plans": []
+      },
+      "quality": {
+        "displayScore": null,
+        "note": "No comparable public emergency-care quality score is displayed.",
+        "sourceUrl": "https://profiles.health.ny.gov/hospital/view/102989"
+      },
+      "verification": {
+        "status": "verified-with-unknowns",
+        "reviewedAt": "2026-09-27",
+        "reviewBy": "2026-12-27",
+        "method": "cms-match-authoritative-provider-and-state-sources"
+      },
+      "evidence": [
+        {
+          "id": "siuh-north-provider",
+          "url": "https://www.northwell.edu/find-care/locations/staten-island-university-hospital",
+          "publisher": "Northwell Health",
+          "supports": [
+            "identity",
+            "location",
+            "contact",
+            "capabilities",
+            "hours",
+            "highlights",
+            "patientGroups"
+          ],
+          "checkedAt": "2026-09-27"
+        },
+        {
+          "id": "siuh-north-nys-trauma-designation",
+          "url": "https://www.health.ny.gov/professionals/ems/state_trauma/trauma2.htm",
+          "publisher": "New York State Department of Health",
+          "supports": [
+            "identity",
+            "location",
+            "capabilities",
+            "highlights",
+            "patientGroups"
+          ],
+          "checkedAt": "2026-09-27"
+        },
+        {
+          "id": "siuh-north-nys-safe-directory",
+          "url": "https://www.health.ny.gov/professionals/safe/",
+          "publisher": "New York State Department of Health",
+          "supports": [
+            "identity",
+            "location",
+            "contact"
+          ],
+          "checkedAt": "2026-09-27"
         }
       ]
     }
