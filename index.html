@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="insights.css?v=2">
   <link rel="stylesheet" href="outcome-extra.css?v=1">
   <link rel="stylesheet" href="cohort.css?v=1">
+  <link rel="stylesheet" href="nyc-pilot.css?v=1">
 </head>
 <body>
   <header class="topbar">
@@ -61,6 +62,23 @@
         <div><strong>4</strong><span data-i18n="statLanguages">complete languages</span></div>
       </div>
       <div class="signal-path" aria-label="NearSignal access brief" data-i18n-aria-label="decisionPathLabel"><span><b data-i18n="pathWho">WHO</b><em data-i18n="decisionWho">Adult or child</em></span><span><b data-i18n="pathSafety">SAFETY</b><em data-i18n="decisionSetting">Urgent care or ER</em></span><span><b data-i18n="pathAccess">ACCESS</b><em data-i18n="decisionReality">Nearby realistic options</em></span><span><b data-i18n="pathEvidence">EVIDENCE</b><em data-i18n="pathEvidenceBody">Source-linked facts</em></span></div>
+    </section>
+
+    <section id="nycPilotIntro" class="nyc-pilot-intro" hidden aria-labelledby="nyc-pilot-title">
+      <div class="nyc-pilot-copy">
+        <p class="eyebrow" data-i18n="nycIntroEyebrow">A five-borough access pilot</p>
+        <h2 id="nyc-pilot-title" data-i18n="nycIntroTitle">Beginning on Staten Island. Built for New York City.</h2>
+        <p data-i18n="nycIntroBody">NearSignal connects evidence about healthcare fragmentation to a patient-facing route through care. This NYC view uses the same safety and verification system as the national platform while focusing recommendations on reviewed locations across all five boroughs.</p>
+      </div>
+      <div class="nyc-pilot-actions">
+        <a href="#questionnaire" class="link-button primary" data-i18n="nycFindCare">Find NYC care</a>
+        <a href="./" class="nyc-national-link" data-i18n="nycNationalLink">View the national platform →</a>
+      </div>
+      <div class="nyc-resource-row" aria-label="New York City resources" data-i18n-aria-label="nycResourcesLabel">
+        <a href="https://www.nyccare.nyc/" target="_blank" rel="noopener"><b data-i18n="nycCareTitle">NYC Care</b><span data-i18n="nycCareBody">Low- or no-cost care for eligible New Yorkers</span></a>
+        <a href="https://www.nychealthandhospitals.org/paying-for-your-health-care/financial-assistance/" target="_blank" rel="noopener"><b data-i18n="nycFinancialTitle">Financial help</b><span data-i18n="nycFinancialBody">NYC Health + Hospitals assistance information</span></a>
+        <a href="https://nyc988.cityofnewyork.us/en/" target="_blank" rel="noopener"><b data-i18n="nyc988Title">NYC 988</b><span data-i18n="nyc988Body">Free, confidential mental-health support</span></a>
+      </div>
     </section>
 
     <section class="panel" id="questionnaire" aria-labelledby="form-title">
@@ -377,6 +395,6 @@
   <script src="data/nyc-facilities.js?v=1"></script>
   <script src="data/review/evidence-network.js?v=4"></script>
   <script src="data/review/provider-enrichment.js?v=4"></script>
-  <script type="module" src="app.js?v=54"></script>
+  <script type="module" src="app.js?v=55"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+.nyc-pilot-intro{max-width:900px;margin:0 auto 42px;padding:30px;border-radius:26px;background:linear-gradient(135deg,#102b48,#145c65);color:#fff;box-shadow:0 22px 60px rgba(16,43,72,.16)}
+.nyc-pilot-intro[hidden]{display:none}
+.nyc-pilot-intro .eyebrow{color:#8fe4dc}
+.nyc-pilot-copy h2{max-width:700px;margin:0 0 12px;font:700 clamp(30px,5vw,46px)/1.08 Georgia,serif;letter-spacing:-.035em}
+.nyc-pilot-copy>p:last-child{max-width:760px;margin:0;color:#d8e9ec;font-size:17px}
+.nyc-pilot-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:24px 0}
+.nyc-pilot-actions .primary{background:#fff;color:#12384a}
+.nyc-national-link{color:#fff;font-weight:800}
+.nyc-resource-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.nyc-resource-row a{display:flex;flex-direction:column;min-height:105px;padding:16px;border:1px solid rgba(255,255,255,.2);border-radius:15px;background:rgba(255,255,255,.08);color:#fff;text-decoration:none}
+.nyc-resource-row b{margin-bottom:5px}
+.nyc-resource-row span{color:#d8e9ec;font-size:13px;line-height:1.35}
+.nyc-mode .signal-hero{margin-bottom:34px}
+.nyc-mode .state-row>label,.nyc-mode .state-row>select,.nyc-mode .state-row>.helper{display:none}
+@media(max-width:650px){.nyc-pilot-intro{margin:0 10px 30px;padding:24px 19px;border-radius:22px}.nyc-resource-row{grid-template-columns:1fr}.nyc-resource-row a{min-height:auto}}

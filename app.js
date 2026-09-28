@@ -1,5 +1,5 @@
 import { RoutingService, presentRoute } from './routing.js?v=3';
-import { currentLanguage, format, initLanguage, t } from './i18n.js?v=21';
+import { currentLanguage, format, initLanguage, t } from './i18n.js?v=22';
 import { translateBriefTextToEnglish } from './brief-translation.js?v=3';
 import { accessEvidence, createArrivalCode, outcomeCount, saveOutcome } from './access-insight.js?v=1';
 import { buildDemoConfirmation, nextAlternative } from './verified-arrival.js?v=1';
@@ -8,7 +8,11 @@ import { analyzeAccess, XRAY_REASON_ORDER } from './access-xray.js?v=1';
 import { discoverySource, loadDiscoveryState, rankDiscoveryRecords } from './national-discovery.js?v=1';
 import { lookupZip } from './zip-lookup.js?v=1';
 
-const facilities = window.CARE_ROUTE_FACILITIES;
+const experienceMode = new URLSearchParams(window.location.search).get('pilot') === 'nyc' ? 'nyc' : 'national';
+const NYC_ZIP_PREFIXES = new Set(['100','101','102','103','104','110','111','112','113','114','116']);
+const isNycFacility = (facility) => facility.state === 'NY' && NYC_ZIP_PREFIXES.has((facility.address.match(/\b(\d{5})(?:-\d{4})?\b/)?.[1] || '').slice(0, 3));
+const allFacilities = window.CARE_ROUTE_FACILITIES;
+const facilities = experienceMode === 'nyc' ? allFacilities.filter(isNycFacility) : allFacilities;
 const commonspiritBatch = window.NEARSIGNAL_PROVIDER_ENRICHMENT;
 const routingService = new RoutingService(window.CARE_ROUTE_CONFIG?.routing);
 const state = { step: 1, location: null, locationSource: null, locationZip: null, routes: new Map(), showAllResults: false, discoveryLimit: 12, demoScenario: false, lastEligible: [], verifiedFacilityId: null };
@@ -20,8 +24,25 @@ let installPrompt = null;
 const steps = [...document.querySelectorAll('.step')];
 const titleKeys = ['step1', 'step2', 'step3', 'step4'];
 
+if (experienceMode === 'nyc') {
+  document.body.classList.add('nyc-mode');
+  document.title = 'NearSignal NYC — find care that can actually receive you';
+  document.querySelector('meta[name="description"]')?.setAttribute('content', 'A five-borough NearSignal pilot helping New Yorkers find realistic adult and pediatric urgent and emergency care.');
+  const modeKeys = {
+    pilot: 'nycPilot', eyebrow: 'nycEyebrow', heroTitle: 'nycHeroTitle', heroBody: 'nycHeroBody',
+    demoHelper: 'nycDemoHelper', demoBanner: 'nycDemoBanner', statFacilities: 'nycStatFacilities', limitationsBody: 'nycLimitationsBody'
+  };
+  Object.entries(modeKeys).forEach(([currentKey, modeKey]) => {
+    document.querySelectorAll(`[data-i18n="${currentKey}"]`).forEach((element) => { element.dataset.i18n = modeKey; });
+  });
+  document.getElementById('nycPilotIntro').hidden = false;
+}
+
 initLanguage();
-document.getElementById('stateSelect').innerHTML=`<option value="">${t('allStates')}</option>${NATIONAL_PLACES.map(([code,name])=>`<option value="${code}">${name}</option>`).join('')}`;
+document.getElementById('stateSelect').innerHTML = experienceMode === 'nyc'
+  ? '<option value="NY">New York</option>'
+  : `<option value="">${t('allStates')}</option>${NATIONAL_PLACES.map(([code,name])=>`<option value="${code}">${name}</option>`).join('')}`;
+if (experienceMode === 'nyc') document.getElementById('stateSelect').value = 'NY';
 document.getElementById('facilityCount').textContent = facilities.length;
 const evidenceNetwork = window.CARE_ROUTE_EVIDENCE_NETWORK;
 if (evidenceNetwork) {
@@ -69,7 +90,7 @@ document.querySelectorAll('[name=patientGroup]').forEach((input) => input.addEve
 }));
 document.querySelectorAll('.back').forEach((button) => button.addEventListener('click', () => showStep(state.step - 1)));
 document.addEventListener('nearsignal:language', async () => {
-  document.getElementById('stateSelect').options[0].textContent=t('allStates');
+  if (experienceMode !== 'nyc') document.getElementById('stateSelect').options[0].textContent=t('allStates');
   showStep(state.step);
   if (!document.getElementById('results').hidden) await renderResults();
 });
@@ -104,12 +125,13 @@ async function applyZip() {
     return false;
   }
   clearLocation();
-  document.getElementById('stateSelect').value = '';
+  document.getElementById('stateSelect').value = experienceMode === 'nyc' ? 'NY' : '';
   button.disabled = true;
   status.textContent = t('zipFinding');
   try {
     const { place, region, lat, lon } = await lookupZip(zip);
     if (!NATIONAL_CODES.has(region) || !Number.isFinite(lat) || !Number.isFinite(lon)) throw new Error('zip-outside');
+    if (experienceMode === 'nyc' && (region !== 'NY' || !NYC_ZIP_PREFIXES.has(zip.slice(0, 3)))) throw new Error('zip-outside-nyc');
     document.getElementById('stateSelect').value = region;
     state.location = { lat, lon };
     state.locationSource = 'zip';
@@ -119,8 +141,8 @@ async function applyZip() {
     return true;
   } catch (error) {
     clearLocation();
-    document.getElementById('stateSelect').value = '';
-    status.textContent = error.message === 'zip-outside' ? t('zipOutside') : t('zipUnavailable');
+    document.getElementById('stateSelect').value = experienceMode === 'nyc' ? 'NY' : '';
+    status.textContent = error.message === 'zip-outside-nyc' ? t('nycZipOutside') : error.message === 'zip-outside' ? t('zipOutside') : t('zipUnavailable');
     return false;
   } finally {
     button.disabled = false;
@@ -136,7 +158,7 @@ document.getElementById('zipCode').addEventListener('keydown', (event) => {
 document.getElementById('zipCode').addEventListener('input', (event) => {
   if (!state.locationZip || event.currentTarget.value.trim() === state.locationZip) return;
   clearLocation();
-  document.getElementById('stateSelect').value = '';
+  document.getElementById('stateSelect').value = experienceMode === 'nyc' ? 'NY' : '';
   document.getElementById('zipStatus').textContent = '';
   document.getElementById('zipStatus').classList.remove('success');
 });
@@ -184,13 +206,13 @@ document.getElementById('tryDemo').addEventListener('click', () => {
   document.getElementById('childAge').hidden = false;
   document.getElementById('ageValue').value = '5';
   document.getElementById('ageUnit').value = 'years';
-  document.getElementById('stateSelect').value = 'NJ';
+  document.getElementById('stateSelect').value = experienceMode === 'nyc' ? 'NY' : 'NJ';
   document.querySelector('[name=need][value=illness]').checked = true;
   document.querySelector('[name=emergency][value=no]').checked = true;
-  document.querySelectorAll('[name=accessNeed]').forEach((input) => { input.checked = ['uninsured', 'low-cost'].includes(input.value); });
-  state.location = { lat: 40.7357, lon: -74.1724 };
+  document.querySelectorAll('[name=accessNeed]').forEach((input) => { input.checked = experienceMode !== 'nyc' && ['uninsured', 'low-cost'].includes(input.value); });
+  state.location = experienceMode === 'nyc' ? { lat: 40.6315, lon: -74.1057 } : { lat: 40.7357, lon: -74.1724 };
   state.locationSource = 'demo';
-  state.locationZip = '07102';
+  state.locationZip = experienceMode === 'nyc' ? '10310' : '07102';
   state.demoScenario = true;
   showCareOptions(document.getElementById('showCareOptions'));
 });
