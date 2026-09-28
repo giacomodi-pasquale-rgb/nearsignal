@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { RoutingService, presentRoute } from '../routing.js';
 
 test('OSRM adapter returns sourced distance and duration without claiming traffic', async () => {
-  const fakeFetch = async () => ({ ok: true, json: async () => ({ durations: [[0, 600]], distances: [[0, 8046.72]] }) });
+  const fakeFetch = async () => ({ ok: true, json: async () => ({ durations: [[600]], distances: [[8046.72]] }) });
   const service = new RoutingService({ provider: 'osrm', endpoint: 'https://routing.test' }, fakeFetch);
   const routes = await service.matrix({ lat: 40.8, lon: -74.2 }, [{ id: 'hospital', coordinates: { lat: 40.7, lon: -74.3 } }]);
   const route = routes.get('hospital');
@@ -11,6 +11,19 @@ test('OSRM adapter returns sourced distance and duration without claiming traffi
   assert.equal(route.distanceMeters, 8046.72);
   assert.equal(route.trafficAware, false);
   assert.equal(route.provider, 'OpenStreetMap / OSRM');
+});
+
+test('OSRM adapter keeps multiple destination results paired with their facilities', async () => {
+  const fakeFetch = async () => ({ ok: true, json: async () => ({ durations: [[120, 900]], distances: [[1000, 12000]] }) });
+  const service = new RoutingService({ provider: 'osrm', endpoint: 'https://routing.test' }, fakeFetch);
+  const routes = await service.matrix({ lat: 40.8, lon: -74.2 }, [
+    { id: 'nearby', coordinates: { lat: 40.81, lon: -74.2 } },
+    { id: 'farther', coordinates: { lat: 40.7, lon: -74.3 } }
+  ]);
+  assert.equal(routes.get('nearby').durationSeconds, 120);
+  assert.equal(routes.get('nearby').distanceMeters, 1000);
+  assert.equal(routes.get('farther').durationSeconds, 900);
+  assert.equal(routes.get('farther').distanceMeters, 12000);
 });
 
 test('route presenter calculates minutes, miles, and arrival consistently', () => {

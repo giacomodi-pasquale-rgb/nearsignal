@@ -1,7 +1,7 @@
 // Generated from data/v1/facilities.json. Do not edit by hand.
 window.CARE_ROUTE_DATASET = {
-  "datasetVersion": "2026-09-27.1",
-  "reviewedAt": "2026-09-27"
+  "datasetVersion": "2026-09-28.1",
+  "reviewedAt": "2026-09-28"
 };
 window.CARE_ROUTE_FACILITIES = [
   {

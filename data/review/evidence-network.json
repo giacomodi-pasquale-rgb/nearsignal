@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-30T13:59:57.726Z",
-  "datasetVersion": "2026-09-14.1",
+  "generatedAt": "2026-09-28T12:00:00.000Z",
+  "datasetVersion": "2026-09-28.1",
   "tiers": {
     "officiallyIndexed": {
       "total": 22292,
@@ -16,10 +16,10 @@
       "patientVisible": false
     },
     "decisionReady": {
-      "total": 106,
-      "evidenceRecords": 125,
+      "total": 116,
+      "evidenceRecords": 141,
       "reviewDueSoon": 3,
-      "definition": "CareRoute records that passed release-blocking identity, location, care-setting, patient-group, capability, contact and source checks.",
+      "definition": "NearSignal records that passed release-blocking identity, location, care-setting, patient-group, capability, contact and source checks.",
       "patientVisible": true
     }
   },

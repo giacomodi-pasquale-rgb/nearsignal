@@ -4,7 +4,7 @@ NearSignal is a production-oriented, mobile-first foundation for national care n
 
 ## What is real
 
-- 108 decision-ready adult and/or pediatric emergency, urgent-care, or community health-center locations, including both Staten Island hospital emergency departments and a seven-location CommonSpirit release batch
+- 116 decision-ready adult and/or pediatric emergency, urgent-care, or community health-center locations, including a 15-location five-borough NYC emergency network and a seven-location CommonSpirit release batch
 - A focused urgent-care-versus-emergency pathway with separate adult and pediatric eligibility and safety gates
 - A 25-location CommonSpirit fragmentation-priority cohort spanning Arkansas, Arizona, California, Georgia, Kentucky, and Nevada, with unresolved evidence kept visibly separate from decision-ready recommendations
 - A national evidence foundation of 22,292 official federal records: 4,495 CMS emergency-hospital candidates and 17,797 active HRSA health-center service-site candidates
@@ -71,9 +71,9 @@ npm run build:network
 
 NearSignal uses three explicit evidence tiers: **officially indexed**, **evidence enriched**, and **decision-ready**. The first two are operational research queues and remain invisible in patient results. Only decision-ready records that pass the release-blocking data checks are published.
 
-The national queue is available at `review.html`. It shows the 22,292-record expansion foundation and the CMS hospital review workflow while keeping the 108 decision-ready records visibly distinct. The patient experience also presents a 25-location CommonSpirit fragmentation-priority cohort: seven cleared locations participate in recommendations, while 18 remain explicitly marked “confirm before travel” until their remaining location-level evidence gaps are resolved. This operational view is explicitly not a patient directory.
+The national queue is available at `review.html`. It shows the 22,292-record expansion foundation and the CMS hospital review workflow while keeping the 116 decision-ready records visibly distinct. The patient experience also presents a 25-location CommonSpirit fragmentation-priority cohort: seven cleared locations participate in recommendations, while 18 remain explicitly marked “confirm before travel” until their remaining location-level evidence gaps are resolved. This operational view is explicitly not a patient directory.
 
-Data reviewed: September 27, 2026.
+Data reviewed: September 28, 2026.
 
 ### Primary facility sources
 

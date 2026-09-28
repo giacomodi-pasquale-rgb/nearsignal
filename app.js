@@ -1,5 +1,5 @@
-import { RoutingService, presentRoute } from './routing.js?v=2';
-import { currentLanguage, format, initLanguage, t } from './i18n.js?v=20';
+import { RoutingService, presentRoute } from './routing.js?v=3';
+import { currentLanguage, format, initLanguage, t } from './i18n.js?v=21';
 import { translateBriefTextToEnglish } from './brief-translation.js?v=3';
 import { accessEvidence, createArrivalCode, outcomeCount, saveOutcome } from './access-insight.js?v=1';
 import { buildDemoConfirmation, nextAlternative } from './verified-arrival.js?v=1';
@@ -804,7 +804,13 @@ async function renderNationalDiscovery(inputs){
   document.getElementById('discoveryCards').innerHTML='';
   try{
     const shard=await loadDiscoveryState(selectedState);
-    const ranked=rankDiscoveryRecords(shard.records,{origin:state.location,zip:state.locationZip,emergency:inputs.emergency,limit:shard.records.length});
+    const normalizeAddress=(value)=>String(value||'').toUpperCase().replace(/[^A-Z0-9]/g,'');
+    const verifiedAddresses=new Set(facilities.map(facility=>normalizeAddress(facility.address)));
+    const discoveryRecords=shard.records.map(record=>{
+      const address=[record.address,record.city,record.state,record.zip].filter(Boolean).join(', ');
+      return {...record,matchedVerified:record.matchedVerified||verifiedAddresses.has(normalizeAddress(address))};
+    });
+    const ranked=rankDiscoveryRecords(discoveryRecords,{origin:state.location,zip:state.locationZip,emergency:inputs.emergency,limit:shard.records.length});
     const records=ranked.slice(0,state.discoveryLimit);
     document.getElementById('discoveryCounts').innerHTML=`<div><strong>${shard.total.toLocaleString()}</strong><span>${format('discoveryStateTotal',{state:selectedState})}</span></div><div><strong>${shard.hospitals.toLocaleString()}</strong><span>${t('discoveryCmsHospitals')}</span></div><div><strong>${shard.healthCenters.toLocaleString()}</strong><span>${t('discoveryHrsaCenters')}</span></div>`;
     document.getElementById('discoveryCards').innerHTML=records.length?`${records.map(discoveryCard).join('')}${ranked.length>records.length?`<button id="showMoreDiscovery" class="secondary discovery-more" type="button">${format('discoveryShowMore',{remaining:Math.min(12,ranked.length-records.length)})}</button>`:''}`:`<p class="discovery-empty">${t('discoveryNone')}</p>`;

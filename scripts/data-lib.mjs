@@ -1,5 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { DATASET_VERSION, expandUrgentCareLocations } from '../data/v1/urgent-care-expansion.mjs';
+import { NYC_HOSPITAL_DATASET_VERSION, expandNycHospitalLocations } from '../data/v1/nyc-hospital-expansion.mjs';
 
 export const CAPABILITIES = new Set(['illness', 'breathing', 'injury', 'wound', 'stomach', 'other']);
 export const FACILITY_TYPES = new Set(['emergency', 'urgent-care', 'community-health-center']);
@@ -12,9 +13,9 @@ export async function readDataset(path = new URL('../data/v1/facilities.json', i
   if (!isCanonicalDataset) return dataset;
   return {
     ...dataset,
-    datasetVersion: DATASET_VERSION,
-    reviewedAt: '2026-09-27',
-    facilities: [...dataset.facilities, ...expandUrgentCareLocations()]
+    datasetVersion: NYC_HOSPITAL_DATASET_VERSION || DATASET_VERSION,
+    reviewedAt: '2026-09-28',
+    facilities: [...dataset.facilities, ...expandUrgentCareLocations(), ...expandNycHospitalLocations()]
   };
 }
 

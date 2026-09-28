@@ -18,8 +18,10 @@ export class RoutingService {
     const data = await this.request(`${endpoint}/table/v1/driving/${coordinates}?sources=0&destinations=${destinationIndexes}&annotations=duration,distance`);
     const calculatedAt = new Date().toISOString();
     return new Map(facilities.flatMap((facility, index) => {
-      const durationSeconds = data.durations?.[0]?.[index + 1];
-      const distanceMeters = data.distances?.[0]?.[index + 1];
+      // OSRM returns only the requested destinations, so column zero is the
+      // first facility even though its coordinate index in the request is one.
+      const durationSeconds = data.durations?.[0]?.[index];
+      const distanceMeters = data.distances?.[0]?.[index];
       if (!Number.isFinite(durationSeconds) || !Number.isFinite(distanceMeters)) return [];
       return [[facility.id, { durationSeconds, staticDurationSeconds: durationSeconds, distanceMeters, provider: 'OpenStreetMap / OSRM', trafficAware: false, calculatedAt }]];
     }));
