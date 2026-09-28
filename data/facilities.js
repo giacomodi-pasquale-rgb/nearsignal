@@ -1,6 +1,6 @@
 // Generated from data/v1/facilities.json. Do not edit by hand.
 window.CARE_ROUTE_DATASET = {
-  "datasetVersion": "2026-09-28.1",
+  "datasetVersion": "2026-09-28.2",
   "reviewedAt": "2026-09-28"
 };
 window.CARE_ROUTE_FACILITIES = [
@@ -37,8 +37,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Dedicated nine-room pediatric suite",
@@ -56,9 +55,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": true,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -103,8 +100,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Separate pediatric emergency area",
@@ -122,9 +118,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": true,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -169,8 +163,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Dedicated pediatric emergency room",
@@ -188,9 +181,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": true,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -235,8 +226,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Provider identifies a Pediatric Emergency Department and pediatric emergency area",
@@ -254,9 +244,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": true,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -301,8 +289,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Treats adult, pediatric, geriatric, forensic, and psychiatric patients",
@@ -320,9 +307,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": true,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -366,8 +351,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Dedicated children’s hospital emergency department",
@@ -385,9 +369,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -431,8 +413,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Dedicated pediatric emergency care location",
@@ -450,9 +431,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -495,8 +474,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Dynamic—check the provider page or call before travel",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Treats ages 0–26",
@@ -514,16 +492,14 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
     "verification": {
       "status": "verified",
-      "reviewedAt": "2026-08-17",
-      "reviewBy": "2026-09-17",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
       "method": "authoritative-provider-source"
     }
   },
@@ -606,16 +582,14 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
     "verification": {
       "status": "verified",
-      "reviewedAt": "2026-08-17",
-      "reviewBy": "2026-09-17",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
       "method": "authoritative-provider-source"
     }
   },
@@ -698,16 +672,14 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
     "verification": {
       "status": "verified-with-unknowns",
-      "reviewedAt": "2026-08-17",
-      "reviewBy": "2026-09-17",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
       "method": "authoritative-provider-source"
     }
   },
@@ -742,8 +714,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Call or check the provider before travel; an appointment may be required",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Primary, preventive, and pediatric care",
@@ -761,9 +732,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": true,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": "FQHC access terms are verified statewide; call this location for eligibility, documents, language assistance, and same-day availability.",
       "sourceUrl": "https://www.nj.gov/health/fhs/fqhc/"
     },
@@ -805,8 +774,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Call or check the provider before travel; an appointment may be required",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Primary, preventive, and pediatric care",
@@ -824,9 +792,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": true,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": "FQHC access terms are verified statewide; call this location for eligibility, documents, language assistance, and same-day availability.",
       "sourceUrl": "https://www.nj.gov/health/fhs/fqhc/"
     },
@@ -870,8 +836,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Accepts emergency patients from birth through age 21",
@@ -935,8 +900,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Dedicated exclusively to children from infancy through age 20",
@@ -954,9 +918,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -1001,8 +963,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Maine’s only dedicated pediatric emergency department",
@@ -1067,8 +1028,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Pediatric Emergency Services Unit for patients age 18 and under",
@@ -1086,9 +1046,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -1133,8 +1091,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Separate pediatric emergency department affiliated with UVM Children’s Hospital",
@@ -1152,9 +1109,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": true,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": "The emergency department states that it treats all patients regardless of insurance coverage or ability to pay; this does not mean every service is free.",
       "sourceUrl": "https://www.uvmhealth.org/locations/emergency-department-university-of-vermont-medical-center"
     },
@@ -1198,8 +1153,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Dedicated pediatric emergency department",
@@ -1217,9 +1171,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -1263,8 +1215,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Dedicated pediatric emergency department staffed by pediatric experts",
@@ -1282,9 +1233,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": true,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -1328,8 +1277,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Dedicated pediatric emergency department",
@@ -1347,9 +1295,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": true,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -1393,8 +1339,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Treats pediatric patients from infancy through age 20",
@@ -1412,9 +1357,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": true,
       "charityCare": true,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": "The provider states emergency patients are treated even if they cannot pay and links to Charity Care and payment assistance. This does not mean every service is free.",
       "sourceUrl": "https://www.rwjbh.org/bristol-myers-squibb-childrens-hospital-at-rwjuh/treatment-care/emergency-room-services/"
     },
@@ -1458,8 +1401,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Dedicated pediatric emergency and inpatient center",
@@ -1477,9 +1419,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": true,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -1523,8 +1463,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Separate pediatric emergency entrance, waiting room, registration, and triage",
@@ -1542,9 +1481,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": true,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -1588,8 +1525,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Dedicated pediatric emergency and trauma care",
@@ -1607,9 +1543,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -1653,8 +1587,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Emergency department dedicated entirely to children",
@@ -1672,9 +1605,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -1718,8 +1649,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Dedicated Pediatric Emergency Medicine Division available 24/7",
@@ -1737,9 +1667,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -1783,8 +1711,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Dedicated pediatric emergency and Level 1 pediatric trauma care",
@@ -1849,8 +1776,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Dedicated children’s hospital emergency department",
@@ -1868,9 +1794,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -1915,8 +1839,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Distinct pediatric emergency unit with separate waiting and exam rooms",
@@ -1934,9 +1857,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": true,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": "Mass General states that patients presenting to the Emergency Department are assessed and stabilized regardless of ability to pay. This does not mean all services are free.",
       "sourceUrl": "https://www.massgeneral.org/surgery/trauma/about/support/patients-and-families"
     },
@@ -1980,8 +1901,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "35-bed pediatric emergency department open 24/7",
@@ -1999,9 +1919,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -2045,8 +1963,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Hospital emergency department open 24 hours every day",
@@ -2063,9 +1980,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -2109,8 +2024,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Emergency and trauma team available 24 hours every day",
@@ -2128,9 +2042,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": true,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": "Elliot states that it cares for all patients regardless of ability to pay. This does not mean all services are free.",
       "sourceUrl": "https://www.elliothospital.org/about-us/newsroom/news/j-and-leslie-roberto-share-their-story-life-saving-care-elliot-hospital"
     },
@@ -2175,8 +2087,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Emergency department open 24/7",
@@ -2194,9 +2105,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": true,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": "The provider states that its Emergency Department treats all patients regardless of insurance coverage or ability to pay. This does not mean all services are free; financial counselors are available.",
       "sourceUrl": "https://www.uvmhealth.org/locations/emergency-department-uvm-health-central-vermont-medical-center"
     },
@@ -2240,8 +2149,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Emergency department available 24 hours a day, 365 days a year",
@@ -2259,9 +2167,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -2305,8 +2211,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Emergency department open 24 hours every day",
@@ -2324,9 +2229,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -2370,8 +2273,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Emergency department open 24 hours a day, 365 days a year",
@@ -2389,9 +2291,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -2435,8 +2335,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Emergency care available 24/7",
@@ -2454,9 +2353,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -2500,8 +2397,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Adult emergency entrance open 24/7",
@@ -2519,9 +2415,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -2565,8 +2459,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Emergency department open 24/7",
@@ -2584,9 +2477,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -2630,8 +2521,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Hospital and emergency department available 24 hours",
@@ -2649,9 +2539,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -2695,8 +2583,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Adult emergency department with more than 100,000 annual visits",
@@ -2714,9 +2601,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -2760,8 +2645,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Hospital emergency care available 24/7",
@@ -2779,9 +2663,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -2825,8 +2707,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Immediate emergency care 24 hours a day, seven days a week",
@@ -2844,9 +2725,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -2890,8 +2769,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Trauma and emergency professionals available 24/7/365",
@@ -2909,9 +2787,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -2955,8 +2831,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Emergency Trauma Center open 24/7",
@@ -2974,9 +2849,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": true,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -3021,8 +2894,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Emergency care 24 hours a day, seven days a week",
@@ -3040,9 +2912,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -3086,8 +2956,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Emergency department open 24/7",
@@ -3105,9 +2974,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -3151,8 +3018,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Emergency department staffed 24 hours a day, 365 days a year",
@@ -3170,9 +3036,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -3216,8 +3080,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "always",
       "label": "Open 24 hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Emergency department open 24/7/365",
@@ -3235,9 +3098,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -3327,9 +3188,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -3415,9 +3274,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -3507,9 +3364,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -3598,9 +3453,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -3690,9 +3543,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -3736,8 +3587,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Extended hours; check the provider page or call before travel",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Same-day walk-in care without an appointment",
@@ -3755,9 +3605,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -3847,9 +3695,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -3892,8 +3738,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Dynamic—check the provider page or call before travel",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Treats children and young adults ages 0–26",
@@ -3911,9 +3756,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -3956,8 +3799,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Dynamic—check the provider page or call before travel",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Treats children and young adults ages 0–26",
@@ -3975,9 +3817,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -3986,6 +3826,571 @@ window.CARE_ROUTE_FACILITIES = [
       "reviewedAt": "2026-08-30",
       "reviewBy": "2026-11-30",
       "method": "authoritative-provider-and-openstreetmap-sources"
+    }
+  },
+  {
+    "id": "commonspirit-041324-morrilton-ar",
+    "name": "CHI St. Vincent Morrilton - Emergency Room",
+    "city": "Morrilton",
+    "state": "AR",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "4 Hospital Drive, Morrilton, AR 72110",
+    "coordinates": {
+      "lat": 35.1673972,
+      "lon": -92.7209243
+    },
+    "phone": "(501) 977-2300",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency department",
+      "Provider explicitly publishes 24/7 emergency availability",
+      "Provider publishes emergency access without insurance or ability to pay"
+    ],
+    "sourceUrl": "https://www.commonspirit.org/find-a-location/chi-st-vincent-morrilton-emergency-room-1382",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Emergency care is provided regardless of insurance or ability to pay; financial assistance may be available. Verify plan participation and financial-assistance terms.",
+      "sourceUrl": "https://www.commonspirit.org/find-a-location/chi-st-vincent-morrilton-emergency-room-1382"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-14",
+      "reviewBy": "2026-12-14",
+      "method": "cms-match-and-authoritative-provider-source"
+    }
+  },
+  {
+    "id": "commonspirit-110236-ringgold-ga",
+    "name": "CommonSpirit - Memorial Hospital - Emergency Room - North Georgia",
+    "city": "Ringgold",
+    "state": "GA",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "4710 Battlefield Parkway, Ringgold, GA 30736",
+    "coordinates": {
+      "lat": 34.932429,
+      "lon": -85.1874763
+    },
+    "phone": "(706) 944-2703",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency department",
+      "Provider explicitly publishes 24/7 emergency availability",
+      "Provider publishes emergency access without insurance or ability to pay"
+    ],
+    "sourceUrl": "https://www.commonspirit.org/find-a-location/commonspirit-memorial-hospital-emergency-room-north-georgia-3989",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Emergency care is provided regardless of insurance or ability to pay; financial assistance may be available. Verify plan participation and financial-assistance terms.",
+      "sourceUrl": "https://www.commonspirit.org/find-a-location/commonspirit-memorial-hospital-emergency-room-north-georgia-3989"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-14",
+      "reviewBy": "2026-12-14",
+      "method": "cms-match-and-authoritative-provider-source"
+    }
+  },
+  {
+    "id": "commonspirit-030110-goodyear-az",
+    "name": "Emergency Room at Dignity Health Arizona General Hospital Emergency Room - Goodyear",
+    "city": "Goodyear",
+    "state": "AZ",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "251 N Estrella Pkwy, Goodyear, AZ 85338",
+    "coordinates": {
+      "lat": 33.449421,
+      "lon": -112.3918469
+    },
+    "phone": "(623) 322-6900",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency department",
+      "Provider explicitly publishes 24/7 emergency availability",
+      "Provider publishes emergency access without insurance or ability to pay"
+    ],
+    "sourceUrl": "https://www.commonspirit.org/find-a-location/emergency-room-at-dignity-health-az-general-hospital-emergency-room-goodyear-3845",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Emergency care is provided regardless of insurance or ability to pay; financial assistance may be available. Verify plan participation and financial-assistance terms.",
+      "sourceUrl": "https://www.commonspirit.org/find-a-location/emergency-room-at-dignity-health-az-general-hospital-emergency-room-goodyear-3845"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-14",
+      "reviewBy": "2026-12-14",
+      "method": "cms-match-and-authoritative-provider-source"
+    }
+  },
+  {
+    "id": "commonspirit-050036-bakersfield-ca",
+    "name": "Dignity Health - Robert A Grimm Children's Pavilion for Emergency Services",
+    "city": "Bakersfield",
+    "state": "CA",
+    "type": "emergency",
+    "typeLabel": "Pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "pediatric"
+    ],
+    "address": "420 34th St, Bakersfield, CA 93301",
+    "coordinates": {
+      "lat": 35.3920989,
+      "lon": -119.0059836
+    },
+    "phone": "(661) 327-4647",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Pediatric emergency department",
+      "Provider explicitly publishes 24/7 emergency availability",
+      "Provider publishes emergency access without insurance or ability to pay"
+    ],
+    "sourceUrl": "https://www.commonspirit.org/find-a-location/dignity-health-robert-a-grimm-childrens-pavilion-for-emergency-services-2169",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Emergency care is provided regardless of insurance or ability to pay; financial assistance may be available. Verify plan participation and financial-assistance terms.",
+      "sourceUrl": "https://www.commonspirit.org/find-a-location/dignity-health-robert-a-grimm-childrens-pavilion-for-emergency-services-2169"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-14",
+      "reviewBy": "2026-12-14",
+      "method": "cms-match-and-authoritative-provider-source"
+    }
+  },
+  {
+    "id": "commonspirit-290045-henderson-nv",
+    "name": "Children's Emergency Room - Dignity Health - St. Rose Dominican, Siena Campus - Henderson, NV",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "emergency",
+    "typeLabel": "Pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "pediatric"
+    ],
+    "address": "3001 St Rose Pkwy, Henderson, NV 89052",
+    "coordinates": {
+      "lat": 36.0046332,
+      "lon": -115.1149857
+    },
+    "phone": "(702) 616-5000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Pediatric emergency department",
+      "Provider explicitly publishes 24/7 emergency availability",
+      "Provider publishes emergency access without insurance or ability to pay"
+    ],
+    "sourceUrl": "https://www.commonspirit.org/find-a-location/childrens-emergency-room-dignity-health-st-rose-dominican-siena-campus-henderson-686",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Emergency care is provided regardless of insurance or ability to pay; financial assistance may be available. Verify plan participation and financial-assistance terms.",
+      "sourceUrl": "https://www.commonspirit.org/find-a-location/childrens-emergency-room-dignity-health-st-rose-dominican-siena-campus-henderson-686"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-14",
+      "reviewBy": "2026-12-14",
+      "method": "cms-match-and-authoritative-provider-source"
+    }
+  },
+  {
+    "id": "commonspirit-290012-henderson-nv",
+    "name": "Emergency Room - Dignity Health - St. Rose Dominican, Rose de Lima Campus - Henderson, NV",
+    "city": "Henderson",
+    "state": "NV",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "102 E Lake Mead Pkwy, Henderson, NV 89015",
+    "coordinates": {
+      "lat": 36.0387885,
+      "lon": -114.9848258
+    },
+    "phone": "(702) 564-2622",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency department",
+      "Provider explicitly publishes 24/7 emergency availability",
+      "Provider publishes emergency access without insurance or ability to pay"
+    ],
+    "sourceUrl": "https://www.commonspirit.org/find-a-location/emergency-room-dignity-health-st-rose-dominican-rose-de-lima-campus-henderson-2884",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Emergency care is provided regardless of insurance or ability to pay; financial assistance may be available. Verify plan participation and financial-assistance terms.",
+      "sourceUrl": "https://www.commonspirit.org/find-a-location/emergency-room-dignity-health-st-rose-dominican-rose-de-lima-campus-henderson-2884"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-14",
+      "reviewBy": "2026-12-14",
+      "method": "cms-match-and-authoritative-provider-source"
+    }
+  },
+  {
+    "id": "commonspirit-290053-las-vegas-nv",
+    "name": "Emergency Room - Dignity Health - St. Rose Dominican, San Martin Campus - Las Vegas, NV",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "8280 W Warm Springs Rd, Las Vegas, NV 89113",
+    "coordinates": {
+      "lat": 36.0577689,
+      "lon": -115.2721826
+    },
+    "phone": "(702) 492-8000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency department",
+      "Provider explicitly publishes 24/7 emergency availability",
+      "Provider publishes emergency access without insurance or ability to pay"
+    ],
+    "sourceUrl": "https://www.commonspirit.org/find-a-location/emergency-room-dignity-health-st-rose-dominican-san-martin-campus-las-vegas-1780",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Emergency care is provided regardless of insurance or ability to pay; financial assistance may be available. Verify plan participation and financial-assistance terms.",
+      "sourceUrl": "https://www.commonspirit.org/find-a-location/emergency-room-dignity-health-st-rose-dominican-san-martin-campus-las-vegas-1780"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-14",
+      "reviewBy": "2026-12-14",
+      "method": "cms-match-and-authoritative-provider-source"
+    }
+  },
+  {
+    "id": "richmond-university-medical-center-ed",
+    "name": "Richmond University Medical Center Emergency Department",
+    "city": "Staten Island",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "355 Bard Avenue, Staten Island, NY 10310",
+    "coordinates": {
+      "lat": 40.635877,
+      "lon": -74.105557
+    },
+    "phone": "(718) 818-1234",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "New York State Level I adult trauma center",
+      "New York State Level II pediatric trauma center",
+      "Dedicated pediatric-friendly emergency area"
+    ],
+    "sourceUrl": "https://www.rumcsi.org/services/emergency-services/new-emergency-department/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": "https://profiles.health.ny.gov/hospital/printview/102919"
+    },
+    "access": {
+      "uninsuredWelcome": false,
+      "slidingFee": false,
+      "noOneTurnedAway": false,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": null,
+      "sourceUrl": null
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-27",
+      "reviewBy": "2026-12-27",
+      "method": "cms-match-authoritative-provider-and-state-sources"
+    }
+  },
+  {
+    "id": "staten-island-university-hospital-north-ed",
+    "name": "Staten Island University Hospital North Emergency Department",
+    "city": "Staten Island",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "475 Seaview Avenue, Staten Island, NY 10305",
+    "coordinates": {
+      "lat": 40.584781,
+      "lon": -74.086089
+    },
+    "phone": "(718) 226-9000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "New York State Level I adult trauma center",
+      "New York State Level II pediatric trauma center",
+      "North Campus hospital emergency department"
+    ],
+    "sourceUrl": "https://www.northwell.edu/find-care/locations/staten-island-university-hospital",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": "https://profiles.health.ny.gov/hospital/view/102989"
+    },
+    "access": {
+      "uninsuredWelcome": false,
+      "slidingFee": false,
+      "noOneTurnedAway": false,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": null,
+      "sourceUrl": null
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-27",
+      "reviewBy": "2026-12-27",
+      "method": "cms-match-authoritative-provider-and-state-sources"
     }
   },
   {
@@ -4068,9 +4473,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -4161,9 +4564,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -4254,9 +4655,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -4347,9 +4746,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -4392,8 +4789,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor illness and injury",
@@ -4411,9 +4807,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -4456,8 +4850,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor illness and injury",
@@ -4475,9 +4868,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -4520,8 +4911,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor illness and injury",
@@ -4539,9 +4929,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -4584,8 +4972,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor illness and injury",
@@ -4603,9 +4990,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -4648,8 +5033,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor illness and injury",
@@ -4667,9 +5051,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -4712,8 +5094,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor illness and injury",
@@ -4731,9 +5112,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -4776,8 +5155,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor illness and injury",
@@ -4795,9 +5173,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -4840,8 +5216,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor illness and injury",
@@ -4859,9 +5234,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -4904,8 +5277,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Same-day walk-in care without an appointment",
@@ -4923,9 +5295,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -4968,8 +5338,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Same-day walk-in care without an appointment",
@@ -4987,9 +5356,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5032,8 +5399,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor, non-life-threatening illness and injury",
@@ -5051,9 +5417,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5096,8 +5460,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor, non-life-threatening illness and injury",
@@ -5115,9 +5478,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5160,8 +5521,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor, non-life-threatening illness and injury",
@@ -5179,9 +5539,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5224,8 +5582,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor, non-life-threatening illness and injury",
@@ -5243,9 +5600,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5288,8 +5643,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor, non-life-threatening illness and injury",
@@ -5307,9 +5661,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5352,8 +5704,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor, non-life-threatening illness and injury",
@@ -5371,9 +5722,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5416,8 +5765,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor, non-life-threatening illness and injury",
@@ -5435,9 +5783,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5480,8 +5826,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Walk-in care for minor, non-life-threatening illness and injury",
@@ -5499,9 +5844,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5544,8 +5887,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Treats ages 0–26",
@@ -5563,9 +5905,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5608,8 +5948,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Treats ages 0–26",
@@ -5627,9 +5966,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5672,8 +6009,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Treats ages 0–26",
@@ -5691,9 +6027,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5736,8 +6070,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Treats ages 0–26",
@@ -5755,9 +6088,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5800,8 +6131,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Treats ages 0–26",
@@ -5819,9 +6149,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5864,8 +6192,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Treats ages 0–26",
@@ -5883,9 +6210,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5928,8 +6253,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Treats ages 0–26",
@@ -5947,9 +6271,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -5992,8 +6314,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Treats ages 0–26",
@@ -6011,9 +6332,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -6056,8 +6375,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Treats ages 0–26",
@@ -6075,9 +6393,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -6120,8 +6436,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Treats ages 0–26",
@@ -6139,9 +6454,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -6184,8 +6497,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Urgent care for adults and children",
@@ -6203,9 +6515,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -6248,8 +6558,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Urgent care for adults and children",
@@ -6267,9 +6576,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -6312,8 +6619,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Urgent care for adults and children",
@@ -6331,9 +6637,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -6376,8 +6680,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Urgent care for adults and children",
@@ -6395,9 +6698,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -6440,8 +6741,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Urgent care for adults and children",
@@ -6459,9 +6759,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -6504,8 +6802,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Urgent care for adults and children",
@@ -6523,9 +6820,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -6568,8 +6863,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Urgent care for adults and children",
@@ -6587,9 +6881,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -6632,8 +6924,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Urgent care for adults and children",
@@ -6651,9 +6942,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -6696,8 +6985,7 @@ window.CARE_ROUTE_FACILITIES = [
     "hours": {
       "kind": "live",
       "label": "Check the provider page or call for today’s hours",
-      "days": {
-      }
+      "days": {}
     },
     "highlights": [
       "Urgent care for adults and children",
@@ -6715,9 +7003,7 @@ window.CARE_ROUTE_FACILITIES = [
       "noOneTurnedAway": false,
       "charityCare": false,
       "flatFee": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "note": null,
       "sourceUrl": null
     },
@@ -6729,505 +7015,2501 @@ window.CARE_ROUTE_FACILITIES = [
     }
   },
   {
-    "id": "commonspirit-041324-morrilton-ar",
-    "name": "CHI St. Vincent Morrilton - Emergency Room",
-    "city": "Morrilton",
-    "state": "AR",
-    "type": "emergency",
-    "typeLabel": "Adult and pediatric emergency department",
-    "pediatricSpecific": false,
-    "patientGroups": [
-      "adult",
-      "pediatric"
-    ],
-    "address": "4 Hospital Drive, Morrilton, AR 72110",
-    "coordinates": {
-      "lat": 35.1673972,
-      "lon": -92.7209243
-    },
-    "phone": "(501) 977-2300",
-    "age": {
-      "minMonths": null,
-      "maxMonths": null,
-      "verifiedLimits": false
-    },
-    "capabilities": [
-      "illness",
-      "breathing",
-      "injury",
-      "wound",
-      "stomach",
-      "other"
-    ],
-    "hours": {
-      "kind": "always",
-      "label": "Open 24 hours",
-      "days": {
-      }
-    },
-    "highlights": [
-      "Adult and pediatric emergency department",
-      "Provider explicitly publishes 24/7 emergency availability",
-      "Provider publishes emergency access without insurance or ability to pay"
-    ],
-    "sourceUrl": "https://www.commonspirit.org/find-a-location/chi-st-vincent-morrilton-emergency-room-1382",
-    "quality": {
-      "note": "No comparable public emergency-care quality score is displayed.",
-      "url": null
-    },
-    "access": {
-      "uninsuredWelcome": true,
-      "slidingFee": false,
-      "noOneTurnedAway": true,
-      "charityCare": false,
-      "flatFee": null,
-      "languages": [
-
-      ],
-      "note": "Emergency care is provided regardless of insurance or ability to pay; financial assistance may be available. Verify plan participation and financial-assistance terms.",
-      "sourceUrl": "https://www.commonspirit.org/find-a-location/chi-st-vincent-morrilton-emergency-room-1382"
-    },
-    "verification": {
-      "status": "verified-with-unknowns",
-      "reviewedAt": "2026-09-14",
-      "reviewBy": "2026-12-14",
-      "method": "cms-match-and-authoritative-provider-source"
-    }
-  },
-  {
-    "id": "commonspirit-110236-ringgold-ga",
-    "name": "CommonSpirit - Memorial Hospital - Emergency Room - North Georgia",
-    "city": "Ringgold",
-    "state": "GA",
-    "type": "emergency",
-    "typeLabel": "Adult and pediatric emergency department",
-    "pediatricSpecific": false,
-    "patientGroups": [
-      "adult",
-      "pediatric"
-    ],
-    "address": "4710 Battlefield Parkway, Ringgold, GA 30736",
-    "coordinates": {
-      "lat": 34.932429,
-      "lon": -85.1874763
-    },
-    "phone": "(706) 944-2703",
-    "age": {
-      "minMonths": null,
-      "maxMonths": null,
-      "verifiedLimits": false
-    },
-    "capabilities": [
-      "illness",
-      "breathing",
-      "injury",
-      "wound",
-      "stomach",
-      "other"
-    ],
-    "hours": {
-      "kind": "always",
-      "label": "Open 24 hours",
-      "days": {
-      }
-    },
-    "highlights": [
-      "Adult and pediatric emergency department",
-      "Provider explicitly publishes 24/7 emergency availability",
-      "Provider publishes emergency access without insurance or ability to pay"
-    ],
-    "sourceUrl": "https://www.commonspirit.org/find-a-location/commonspirit-memorial-hospital-emergency-room-north-georgia-3989",
-    "quality": {
-      "note": "No comparable public emergency-care quality score is displayed.",
-      "url": null
-    },
-    "access": {
-      "uninsuredWelcome": true,
-      "slidingFee": false,
-      "noOneTurnedAway": true,
-      "charityCare": false,
-      "flatFee": null,
-      "languages": [
-
-      ],
-      "note": "Emergency care is provided regardless of insurance or ability to pay; financial assistance may be available. Verify plan participation and financial-assistance terms.",
-      "sourceUrl": "https://www.commonspirit.org/find-a-location/commonspirit-memorial-hospital-emergency-room-north-georgia-3989"
-    },
-    "verification": {
-      "status": "verified-with-unknowns",
-      "reviewedAt": "2026-09-14",
-      "reviewBy": "2026-12-14",
-      "method": "cms-match-and-authoritative-provider-source"
-    }
-  },
-  {
-    "id": "commonspirit-030110-goodyear-az",
-    "name": "Emergency Room at Dignity Health Arizona General Hospital Emergency Room - Goodyear",
-    "city": "Goodyear",
-    "state": "AZ",
-    "type": "emergency",
-    "typeLabel": "Adult and pediatric emergency department",
-    "pediatricSpecific": false,
-    "patientGroups": [
-      "adult",
-      "pediatric"
-    ],
-    "address": "251 N Estrella Pkwy, Goodyear, AZ 85338",
-    "coordinates": {
-      "lat": 33.449421,
-      "lon": -112.3918469
-    },
-    "phone": "(623) 322-6900",
-    "age": {
-      "minMonths": null,
-      "maxMonths": null,
-      "verifiedLimits": false
-    },
-    "capabilities": [
-      "illness",
-      "breathing",
-      "injury",
-      "wound",
-      "stomach",
-      "other"
-    ],
-    "hours": {
-      "kind": "always",
-      "label": "Open 24 hours",
-      "days": {
-      }
-    },
-    "highlights": [
-      "Adult and pediatric emergency department",
-      "Provider explicitly publishes 24/7 emergency availability",
-      "Provider publishes emergency access without insurance or ability to pay"
-    ],
-    "sourceUrl": "https://www.commonspirit.org/find-a-location/emergency-room-at-dignity-health-az-general-hospital-emergency-room-goodyear-3845",
-    "quality": {
-      "note": "No comparable public emergency-care quality score is displayed.",
-      "url": null
-    },
-    "access": {
-      "uninsuredWelcome": true,
-      "slidingFee": false,
-      "noOneTurnedAway": true,
-      "charityCare": false,
-      "flatFee": null,
-      "languages": [
-
-      ],
-      "note": "Emergency care is provided regardless of insurance or ability to pay; financial assistance may be available. Verify plan participation and financial-assistance terms.",
-      "sourceUrl": "https://www.commonspirit.org/find-a-location/emergency-room-at-dignity-health-az-general-hospital-emergency-room-goodyear-3845"
-    },
-    "verification": {
-      "status": "verified-with-unknowns",
-      "reviewedAt": "2026-09-14",
-      "reviewBy": "2026-12-14",
-      "method": "cms-match-and-authoritative-provider-source"
-    }
-  },
-  {
-    "id": "commonspirit-050036-bakersfield-ca",
-    "name": "Dignity Health - Robert A Grimm Children's Pavilion for Emergency Services",
-    "city": "Bakersfield",
-    "state": "CA",
-    "type": "emergency",
-    "typeLabel": "Pediatric emergency department",
-    "pediatricSpecific": true,
-    "patientGroups": [
-      "pediatric"
-    ],
-    "address": "420 34th St, Bakersfield, CA 93301",
-    "coordinates": {
-      "lat": 35.3920989,
-      "lon": -119.0059836
-    },
-    "phone": "(661) 327-4647",
-    "age": {
-      "minMonths": null,
-      "maxMonths": null,
-      "verifiedLimits": false
-    },
-    "capabilities": [
-      "illness",
-      "breathing",
-      "injury",
-      "wound",
-      "stomach",
-      "other"
-    ],
-    "hours": {
-      "kind": "always",
-      "label": "Open 24 hours",
-      "days": {
-      }
-    },
-    "highlights": [
-      "Pediatric emergency department",
-      "Provider explicitly publishes 24/7 emergency availability",
-      "Provider publishes emergency access without insurance or ability to pay"
-    ],
-    "sourceUrl": "https://www.commonspirit.org/find-a-location/dignity-health-robert-a-grimm-childrens-pavilion-for-emergency-services-2169",
-    "quality": {
-      "note": "No comparable public emergency-care quality score is displayed.",
-      "url": null
-    },
-    "access": {
-      "uninsuredWelcome": true,
-      "slidingFee": false,
-      "noOneTurnedAway": true,
-      "charityCare": false,
-      "flatFee": null,
-      "languages": [
-
-      ],
-      "note": "Emergency care is provided regardless of insurance or ability to pay; financial assistance may be available. Verify plan participation and financial-assistance terms.",
-      "sourceUrl": "https://www.commonspirit.org/find-a-location/dignity-health-robert-a-grimm-childrens-pavilion-for-emergency-services-2169"
-    },
-    "verification": {
-      "status": "verified-with-unknowns",
-      "reviewedAt": "2026-09-14",
-      "reviewBy": "2026-12-14",
-      "method": "cms-match-and-authoritative-provider-source"
-    }
-  },
-  {
-    "id": "commonspirit-290045-henderson-nv",
-    "name": "Children's Emergency Room - Dignity Health - St. Rose Dominican, Siena Campus - Henderson, NV",
-    "city": "Henderson",
-    "state": "NV",
-    "type": "emergency",
-    "typeLabel": "Pediatric emergency department",
-    "pediatricSpecific": true,
-    "patientGroups": [
-      "pediatric"
-    ],
-    "address": "3001 St Rose Pkwy, Henderson, NV 89052",
-    "coordinates": {
-      "lat": 36.0046332,
-      "lon": -115.1149857
-    },
-    "phone": "(702) 616-5000",
-    "age": {
-      "minMonths": null,
-      "maxMonths": null,
-      "verifiedLimits": false
-    },
-    "capabilities": [
-      "illness",
-      "breathing",
-      "injury",
-      "wound",
-      "stomach",
-      "other"
-    ],
-    "hours": {
-      "kind": "always",
-      "label": "Open 24 hours",
-      "days": {
-      }
-    },
-    "highlights": [
-      "Pediatric emergency department",
-      "Provider explicitly publishes 24/7 emergency availability",
-      "Provider publishes emergency access without insurance or ability to pay"
-    ],
-    "sourceUrl": "https://www.commonspirit.org/find-a-location/childrens-emergency-room-dignity-health-st-rose-dominican-siena-campus-henderson-686",
-    "quality": {
-      "note": "No comparable public emergency-care quality score is displayed.",
-      "url": null
-    },
-    "access": {
-      "uninsuredWelcome": true,
-      "slidingFee": false,
-      "noOneTurnedAway": true,
-      "charityCare": false,
-      "flatFee": null,
-      "languages": [
-
-      ],
-      "note": "Emergency care is provided regardless of insurance or ability to pay; financial assistance may be available. Verify plan participation and financial-assistance terms.",
-      "sourceUrl": "https://www.commonspirit.org/find-a-location/childrens-emergency-room-dignity-health-st-rose-dominican-siena-campus-henderson-686"
-    },
-    "verification": {
-      "status": "verified-with-unknowns",
-      "reviewedAt": "2026-09-14",
-      "reviewBy": "2026-12-14",
-      "method": "cms-match-and-authoritative-provider-source"
-    }
-  },
-  {
-    "id": "commonspirit-290012-henderson-nv",
-    "name": "Emergency Room - Dignity Health - St. Rose Dominican, Rose de Lima Campus - Henderson, NV",
-    "city": "Henderson",
-    "state": "NV",
-    "type": "emergency",
-    "typeLabel": "Adult and pediatric emergency department",
-    "pediatricSpecific": false,
-    "patientGroups": [
-      "adult",
-      "pediatric"
-    ],
-    "address": "102 E Lake Mead Pkwy, Henderson, NV 89015",
-    "coordinates": {
-      "lat": 36.0387885,
-      "lon": -114.9848258
-    },
-    "phone": "(702) 564-2622",
-    "age": {
-      "minMonths": null,
-      "maxMonths": null,
-      "verifiedLimits": false
-    },
-    "capabilities": [
-      "illness",
-      "breathing",
-      "injury",
-      "wound",
-      "stomach",
-      "other"
-    ],
-    "hours": {
-      "kind": "always",
-      "label": "Open 24 hours",
-      "days": {
-      }
-    },
-    "highlights": [
-      "Adult and pediatric emergency department",
-      "Provider explicitly publishes 24/7 emergency availability",
-      "Provider publishes emergency access without insurance or ability to pay"
-    ],
-    "sourceUrl": "https://www.commonspirit.org/find-a-location/emergency-room-dignity-health-st-rose-dominican-rose-de-lima-campus-henderson-2884",
-    "quality": {
-      "note": "No comparable public emergency-care quality score is displayed.",
-      "url": null
-    },
-    "access": {
-      "uninsuredWelcome": true,
-      "slidingFee": false,
-      "noOneTurnedAway": true,
-      "charityCare": false,
-      "flatFee": null,
-      "languages": [
-
-      ],
-      "note": "Emergency care is provided regardless of insurance or ability to pay; financial assistance may be available. Verify plan participation and financial-assistance terms.",
-      "sourceUrl": "https://www.commonspirit.org/find-a-location/emergency-room-dignity-health-st-rose-dominican-rose-de-lima-campus-henderson-2884"
-    },
-    "verification": {
-      "status": "verified-with-unknowns",
-      "reviewedAt": "2026-09-14",
-      "reviewBy": "2026-12-14",
-      "method": "cms-match-and-authoritative-provider-source"
-    }
-  },
-  {
-    "id": "commonspirit-290053-las-vegas-nv",
-    "name": "Emergency Room - Dignity Health - St. Rose Dominican, San Martin Campus - Las Vegas, NV",
-    "city": "Las Vegas",
-    "state": "NV",
-    "type": "emergency",
-    "typeLabel": "Adult and pediatric emergency department",
-    "pediatricSpecific": false,
-    "patientGroups": [
-      "adult",
-      "pediatric"
-    ],
-    "address": "8280 W Warm Springs Rd, Las Vegas, NV 89113",
-    "coordinates": {
-      "lat": 36.0577689,
-      "lon": -115.2721826
-    },
-    "phone": "(702) 492-8000",
-    "age": {
-      "minMonths": null,
-      "maxMonths": null,
-      "verifiedLimits": false
-    },
-    "capabilities": [
-      "illness",
-      "breathing",
-      "injury",
-      "wound",
-      "stomach",
-      "other"
-    ],
-    "hours": {
-      "kind": "always",
-      "label": "Open 24 hours",
-      "days": {
-      }
-    },
-    "highlights": [
-      "Adult and pediatric emergency department",
-      "Provider explicitly publishes 24/7 emergency availability",
-      "Provider publishes emergency access without insurance or ability to pay"
-    ],
-    "sourceUrl": "https://www.commonspirit.org/find-a-location/emergency-room-dignity-health-st-rose-dominican-san-martin-campus-las-vegas-1780",
-    "quality": {
-      "note": "No comparable public emergency-care quality score is displayed.",
-      "url": null
-    },
-    "access": {
-      "uninsuredWelcome": true,
-      "slidingFee": false,
-      "noOneTurnedAway": true,
-      "charityCare": false,
-      "flatFee": null,
-      "languages": [
-
-      ],
-      "note": "Emergency care is provided regardless of insurance or ability to pay; financial assistance may be available. Verify plan participation and financial-assistance terms.",
-      "sourceUrl": "https://www.commonspirit.org/find-a-location/emergency-room-dignity-health-st-rose-dominican-san-martin-campus-las-vegas-1780"
-    },
-    "verification": {
-      "status": "verified-with-unknowns",
-      "reviewedAt": "2026-09-14",
-      "reviewBy": "2026-12-14",
-      "method": "cms-match-and-authoritative-provider-source"
-    }
-  },
-  {
-    "id": "richmond-university-medical-center-ed",
-    "name": "Richmond University Medical Center Emergency Department",
-    "city": "Staten Island",
+    "id": "nyc-hh-jacobi-ed",
+    "name": "NYC Health + Hospitals/Jacobi Emergency Department",
+    "city": "Bronx",
     "state": "NY",
     "type": "emergency",
     "typeLabel": "Adult and pediatric emergency department",
     "pediatricSpecific": true,
-    "patientGroups": ["adult", "pediatric"],
-    "address": "355 Bard Avenue, Staten Island, NY 10310",
-    "coordinates": { "lat": 40.635877, "lon": -74.105557 },
-    "phone": "(718) 818-1234",
-    "age": { "minMonths": null, "maxMonths": null, "verifiedLimits": false },
-    "capabilities": ["illness", "breathing", "injury", "wound", "stomach", "other"],
-    "hours": { "kind": "always", "label": "Open 24 hours", "days": {} },
-    "highlights": ["New York State Level I adult trauma center", "New York State Level II pediatric trauma center", "Dedicated pediatric-friendly emergency area"],
-    "sourceUrl": "https://www.rumcsi.org/services/emergency-services/new-emergency-department/",
-    "quality": { "note": "No comparable public emergency-care quality score is displayed.", "url": "https://profiles.health.ny.gov/hospital/printview/102919" },
-    "access": { "uninsuredWelcome": false, "slidingFee": false, "noOneTurnedAway": false, "charityCare": false, "flatFee": null, "languages": [], "note": null, "sourceUrl": null },
-    "verification": { "status": "verified-with-unknowns", "reviewedAt": "2026-09-27", "reviewBy": "2026-12-27", "method": "cms-match-authoritative-provider-and-state-sources" }
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "1400 Pelham Parkway South, Bronx, NY 10461",
+    "coordinates": {
+      "lat": 40.857449,
+      "lon": -73.847645
+    },
+    "phone": "(718) 918-5000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Level I adult trauma center",
+      "Dedicated pediatric emergency department",
+      "Psychiatric emergency services"
+    ],
+    "sourceUrl": "https://www.nychealthandhospitals.org/department-of-emergency-medicine-website-jacobi-ncb/department/jacobi-emergency-services/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "NYC Health + Hospitals states that emergency care is provided regardless of ability to pay. Verify insurance participation and financial-assistance terms.",
+      "sourceUrl": "https://www.nychealthandhospitals.org/services/emergency-services/"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-authoritative-provider-and-system-sources"
+    }
   },
   {
-    "id": "staten-island-university-hospital-north-ed",
-    "name": "Staten Island University Hospital North Emergency Department",
-    "city": "Staten Island",
+    "id": "nyc-hh-lincoln-ed",
+    "name": "NYC Health + Hospitals/Lincoln Emergency Department",
+    "city": "Bronx",
     "state": "NY",
     "type": "emergency",
     "typeLabel": "Adult and pediatric emergency department",
     "pediatricSpecific": true,
-    "patientGroups": ["adult", "pediatric"],
-    "address": "475 Seaview Avenue, Staten Island, NY 10305",
-    "coordinates": { "lat": 40.584781, "lon": -74.086089 },
-    "phone": "(718) 226-9000",
-    "age": { "minMonths": null, "maxMonths": null, "verifiedLimits": false },
-    "capabilities": ["illness", "breathing", "injury", "wound", "stomach", "other"],
-    "hours": { "kind": "always", "label": "Open 24 hours", "days": {} },
-    "highlights": ["New York State Level I adult trauma center", "New York State Level II pediatric trauma center", "North Campus hospital emergency department"],
-    "sourceUrl": "https://www.northwell.edu/find-care/locations/staten-island-university-hospital",
-    "quality": { "note": "No comparable public emergency-care quality score is displayed.", "url": "https://profiles.health.ny.gov/hospital/view/102989" },
-    "access": { "uninsuredWelcome": false, "slidingFee": false, "noOneTurnedAway": false, "charityCare": false, "flatFee": null, "languages": [], "note": null, "sourceUrl": null },
-    "verification": { "status": "verified-with-unknowns", "reviewedAt": "2026-09-27", "reviewBy": "2026-12-27", "method": "cms-match-authoritative-provider-and-state-sources" }
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "234 East 149th Street, Bronx, NY 10451",
+    "coordinates": {
+      "lat": 40.817596,
+      "lon": -73.923799
+    },
+    "phone": "(718) 579-5000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency and trauma care",
+      "Pediatric emergency care available 24 hours",
+      "Emergency behavioral health services"
+    ],
+    "sourceUrl": "https://www.nychealthandhospitals.org/lincoln/services/medical-specialties/pediatric-emergency-and-critical-care/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "NYC Health + Hospitals states that emergency care is provided regardless of ability to pay. Verify insurance participation and financial-assistance terms.",
+      "sourceUrl": "https://www.nychealthandhospitals.org/services/emergency-services/"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-authoritative-provider-and-system-sources"
+    }
+  },
+  {
+    "id": "nyc-hh-south-brooklyn-ed",
+    "name": "NYC Health + Hospitals/South Brooklyn Health Emergency Department",
+    "city": "Brooklyn",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "2601 Ocean Parkway, Brooklyn, NY 11235",
+    "coordinates": {
+      "lat": 40.586634,
+      "lon": -73.96579
+    },
+    "phone": "(718) 616-3000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency physicians",
+      "Separate pediatric emergency care division",
+      "Open 24 hours"
+    ],
+    "sourceUrl": "https://www.nychealthandhospitals.org/southbrooklynhealth/services/emergency-services/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "NYC Health + Hospitals states that emergency care is provided regardless of ability to pay. Verify insurance participation and financial-assistance terms.",
+      "sourceUrl": "https://www.nychealthandhospitals.org/services/emergency-services/"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-authoritative-provider-and-system-sources"
+    }
+  },
+  {
+    "id": "nyc-hh-elmhurst-ed",
+    "name": "NYC Health + Hospitals/Elmhurst Emergency Department",
+    "city": "Elmhurst",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "79-01 Broadway, Elmhurst, NY 11373",
+    "coordinates": {
+      "lat": 40.744849,
+      "lon": -73.885662
+    },
+    "phone": "(718) 334-4000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Level I trauma center",
+      "Dedicated pediatric emergency department",
+      "Interpreter access described by the provider"
+    ],
+    "sourceUrl": "https://www.nychealthandhospitals.org/elmhurst/services/the-pediatric-emergency-department/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "NYC Health + Hospitals states that emergency care is provided regardless of ability to pay. Verify insurance participation and financial-assistance terms.",
+      "sourceUrl": "https://www.nychealthandhospitals.org/services/emergency-services/"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-authoritative-provider-and-system-sources"
+    }
+  },
+  {
+    "id": "nyc-hh-queens-ed",
+    "name": "NYC Health + Hospitals/Queens Emergency Department",
+    "city": "Jamaica",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "82-68 164th Street, Jamaica, NY 11432",
+    "coordinates": {
+      "lat": 40.71749,
+      "lon": -73.80224
+    },
+    "phone": "(718) 883-3000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Full-spectrum adult and pediatric emergency care",
+      "Separate pediatric emergency department",
+      "Open 24 hours"
+    ],
+    "sourceUrl": "https://www.nychealthandhospitals.org/queens/services/emergency-care/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "NYC Health + Hospitals states that emergency care is provided regardless of ability to pay. Verify insurance participation and financial-assistance terms.",
+      "sourceUrl": "https://www.nychealthandhospitals.org/services/emergency-services/"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-authoritative-provider-and-system-sources"
+    }
+  },
+  {
+    "id": "nyc-hh-bellevue-ed",
+    "name": "NYC Health + Hospitals/Bellevue Emergency Department",
+    "city": "New York",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "462 First Avenue, New York, NY 10016",
+    "coordinates": {
+      "lat": 40.739699,
+      "lon": -73.976403
+    },
+    "phone": "(212) 562-4141",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Level I adult trauma center",
+      "Level II pediatric trauma center",
+      "Dedicated adult, pediatric, and psychiatric emergency services"
+    ],
+    "sourceUrl": "https://www.nychealthandhospitals.org/bellevue/services/emergency-trauma/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "NYC Health + Hospitals states that emergency care is provided regardless of ability to pay. Verify insurance participation and financial-assistance terms.",
+      "sourceUrl": "https://www.nychealthandhospitals.org/services/emergency-services/"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-authoritative-provider-and-system-sources"
+    }
+  },
+  {
+    "id": "nyc-hh-harlem-ed",
+    "name": "NYC Health + Hospitals/Harlem Emergency Department",
+    "city": "New York",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "506 Lenox Avenue, New York, NY 10037",
+    "coordinates": {
+      "lat": 40.81489,
+      "lon": -73.940198
+    },
+    "phone": "(212) 939-1000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency and trauma care",
+      "Dedicated pediatric emergency department",
+      "Pediatric emergency care available 24 hours"
+    ],
+    "sourceUrl": "https://www.nychealthandhospitals.org/harlem/services/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "NYC Health + Hospitals states that emergency care is provided regardless of ability to pay. Verify insurance participation and financial-assistance terms.",
+      "sourceUrl": "https://www.nychealthandhospitals.org/services/emergency-services/"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-authoritative-provider-and-system-sources"
+    }
+  },
+  {
+    "id": "nyc-hh-metropolitan-ed",
+    "name": "NYC Health + Hospitals/Metropolitan Emergency Department",
+    "city": "New York",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "1901 First Avenue, New York, NY 10029",
+    "coordinates": {
+      "lat": 40.784174,
+      "lon": -73.944134
+    },
+    "phone": "(212) 423-6262",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Round-the-clock adult emergency care",
+      "Infant, child, and adolescent emergency care",
+      "Psychiatric emergency assessment and stabilization"
+    ],
+    "sourceUrl": "https://www.nychealthandhospitals.org/metropolitan/services/emergency-medicine/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "NYC Health + Hospitals states that emergency care is provided regardless of ability to pay. Verify insurance participation and financial-assistance terms.",
+      "sourceUrl": "https://www.nychealthandhospitals.org/services/emergency-services/"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-authoritative-provider-and-system-sources"
+    }
+  },
+  {
+    "id": "bronxcare-ed",
+    "name": "BronxCare Hospital Center Emergency Department",
+    "city": "Bronx",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "1276 Fulton Avenue, Bronx, NY 10456",
+    "coordinates": {
+      "lat": 40.831749,
+      "lon": -73.903664
+    },
+    "phone": "(718) 590-1800",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.bronxcare.org/our-services/emergency-medicine",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "brooklyn-hospital-ed",
+    "name": "The Brooklyn Hospital Center Emergency Department",
+    "city": "Brooklyn",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "121 DeKalb Avenue, Brooklyn, NY 11201",
+    "coordinates": {
+      "lat": 40.689642,
+      "lon": -73.972207
+    },
+    "phone": "(718) 250-8000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.tbh.org/locations/main-hospital",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "montefiore-moses-ed",
+    "name": "Montefiore Moses Emergency Department",
+    "city": "Bronx",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "111 East 210th Street, Bronx, NY 10467",
+    "coordinates": {
+      "lat": 40.879987,
+      "lon": -73.880739
+    },
+    "phone": "(718) 920-4321",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.montefiore.org/emergency-medicine",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "maimonides-main-ed",
+    "name": "Maimonides Medical Center Emergency Department",
+    "city": "Brooklyn",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "4802 10th Avenue, Brooklyn, NY 11219",
+    "coordinates": {
+      "lat": 40.639538,
+      "lon": -73.998819
+    },
+    "phone": "(718) 283-6000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://maimo.org/treatments-care/trauma-and-er/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "nyp-queens-ed",
+    "name": "NewYork-Presbyterian Queens Emergency Department",
+    "city": "Flushing",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "56-45 Main Street, Flushing, NY 11355",
+    "coordinates": {
+      "lat": 40.747512,
+      "lon": -73.826007
+    },
+    "phone": "(718) 670-1100",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.nyp.org/emergency-medicine",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "lenox-hill-ed",
+    "name": "Lenox Hill Hospital Emergency Department",
+    "city": "New York",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "100 East 77th Street, New York, NY 10075",
+    "coordinates": {
+      "lat": 40.774246,
+      "lon": -73.961446
+    },
+    "phone": "(212) 434-2000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://lenoxhill.northwell.edu/emergency-department",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "kings-county-ed",
+    "name": "NYC Health + Hospitals/Kings County Emergency Department",
+    "city": "Brooklyn",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "451 Clarkson Avenue, Brooklyn, NY 11203",
+    "coordinates": {
+      "lat": 40.655771,
+      "lon": -73.945225
+    },
+    "phone": "(718) 245-3901",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.nychealthandhospitals.org/kingscounty/services/emergency-services/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "suny-downstate-ed",
+    "name": "University Hospital at Downstate Emergency Department",
+    "city": "Brooklyn",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "445 Lenox Road, Brooklyn, NY 11203",
+    "coordinates": {
+      "lat": 40.654454,
+      "lon": -73.946246
+    },
+    "phone": "(718) 270-1000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.downstate.edu/email/emergency-medicine/emergency.html",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "st-barnabas-ed",
+    "name": "St. Barnabas Hospital Emergency Department",
+    "city": "Bronx",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "4422 Third Avenue, Bronx, NY 10457",
+    "coordinates": {
+      "lat": 40.853567,
+      "lon": -73.891325
+    },
+    "phone": "(718) 960-9000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.sbhny.org/services/emergency-medicine/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "jamaica-hospital-ed",
+    "name": "Jamaica Hospital Medical Center Emergency Department",
+    "city": "Jamaica",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "89-00 Van Wyck Expressway, Jamaica, NY 11418",
+    "coordinates": {
+      "lat": 40.702881,
+      "lon": -73.817131
+    },
+    "phone": "(718) 262-6000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://jamaicahospital.org/clinical-services/emergency-medicine/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "flushing-hospital-ed",
+    "name": "Flushing Hospital Medical Center Emergency Department",
+    "city": "Flushing",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "45-00 Parsons Boulevard, Flushing, NY 11355",
+    "coordinates": {
+      "lat": 40.755549,
+      "lon": -73.815628
+    },
+    "phone": "(718) 670-5000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://flushinghospital.org/clinical-services/emergency-department/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "wyckoff-heights-ed",
+    "name": "Wyckoff Heights Medical Center Emergency Department",
+    "city": "Brooklyn",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "374 Stockholm Street, Brooklyn, NY 11237",
+    "coordinates": {
+      "lat": 40.704912,
+      "lon": -73.917336
+    },
+    "phone": "(718) 963-7272",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://wyckoffhospital.org/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "brookdale-ed",
+    "name": "One Brooklyn Health Brookdale Emergency Department",
+    "city": "Brooklyn",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "1 Brookdale Plaza, Brooklyn, NY 11212",
+    "coordinates": {
+      "lat": 40.655241,
+      "lon": -73.912205
+    },
+    "phone": "(718) 240-5000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://onebrooklynhealth.org/services/emergency-care",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "st-johns-episcopal-ed",
+    "name": "St. John’s Episcopal Hospital Emergency Department",
+    "city": "Far Rockaway",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "327 Beach 19th Street, Far Rockaway, NY 11691",
+    "coordinates": {
+      "lat": 40.598035,
+      "lon": -73.753029
+    },
+    "phone": "(718) 869-7000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://ehs.org/services/emergency-medicine/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "mount-sinai-west-ed",
+    "name": "Mount Sinai West Emergency Department",
+    "city": "New York",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "1000 10th Avenue, New York, NY 10019",
+    "coordinates": {
+      "lat": 40.770078,
+      "lon": -73.987771
+    },
+    "phone": "(212) 523-4000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.mountsinai.org/locations/emergency-medicine",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "maimonides-midwood-ed",
+    "name": "Maimonides Midwood Community Hospital Emergency Department",
+    "city": "Brooklyn",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "2525 Kings Highway, Brooklyn, NY 11229",
+    "coordinates": {
+      "lat": 40.613836,
+      "lon": -73.948083
+    },
+    "phone": "(718) 692-5302",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://maimo.org/treatments-care/trauma-and-er/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "woodhull-ed",
+    "name": "NYC Health + Hospitals/Woodhull Emergency Department",
+    "city": "Brooklyn",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "760 Broadway, Brooklyn, NY 11206",
+    "coordinates": {
+      "lat": 40.700457,
+      "lon": -73.941585
+    },
+    "phone": "(718) 963-8100",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.nychealthandhospitals.org/woodhull/services/emergency-room/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "nyp-columbia-ed",
+    "name": "NewYork-Presbyterian/Columbia Emergency Department",
+    "city": "New York",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "622 West 168th Street, New York, NY 10032",
+    "coordinates": {
+      "lat": 40.841285,
+      "lon": -73.940404
+    },
+    "phone": "(212) 305-6204",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.nyp.org/emergency-medicine",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "nyp-weill-cornell-ed",
+    "name": "NewYork-Presbyterian/Weill Cornell Emergency Department",
+    "city": "New York",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "525 East 68th Street, New York, NY 10065",
+    "coordinates": {
+      "lat": 40.764257,
+      "lon": -73.955378
+    },
+    "phone": "(212) 746-5026",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.nyp.org/emergency-medicine",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "nyp-allen-ed",
+    "name": "NewYork-Presbyterian/Allen Hospital Emergency Department",
+    "city": "New York",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "5141 Broadway, New York, NY 10034",
+    "coordinates": {
+      "lat": 40.872832,
+      "lon": -73.91222
+    },
+    "phone": "(212) 932-4245",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.nyp.org/emergency-medicine",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "nyp-lower-manhattan-ed",
+    "name": "NewYork-Presbyterian Lower Manhattan Hospital Emergency Department",
+    "city": "New York",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "170 William Street, New York, NY 10038",
+    "coordinates": {
+      "lat": 40.710407,
+      "lon": -74.005493
+    },
+    "phone": "(212) 312-5070",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.nyp.org/emergency-medicine",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "nyp-brooklyn-methodist-ed",
+    "name": "NewYork-Presbyterian Brooklyn Methodist Emergency Department",
+    "city": "Brooklyn",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "506 6th Street, Brooklyn, NY 11215",
+    "coordinates": {
+      "lat": 40.668465,
+      "lon": -73.979711
+    },
+    "phone": "(718) 780-3137",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.nyp.org/emergency-medicine",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "mount-sinai-morningside-ed",
+    "name": "Mount Sinai Morningside Emergency Department",
+    "city": "New York",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "1111 Amsterdam Avenue, New York, NY 10025",
+    "coordinates": {
+      "lat": 40.805861,
+      "lon": -73.961663
+    },
+    "phone": "(212) 523-4000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.mountsinai.org/locations/emergency-medicine",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "mount-sinai-queens-ed",
+    "name": "Mount Sinai Queens Emergency Department",
+    "city": "Astoria",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "25-10 30th Avenue, Astoria, NY 11102",
+    "coordinates": {
+      "lat": 40.768408,
+      "lon": -73.92477
+    },
+    "phone": "(718) 932-1000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.mountsinai.org/locations/emergency-medicine",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "mount-sinai-brooklyn-ed",
+    "name": "Mount Sinai Brooklyn Emergency Department",
+    "city": "Brooklyn",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "3201 Kings Highway, Brooklyn, NY 11234",
+    "coordinates": {
+      "lat": 40.617757,
+      "lon": -73.943216
+    },
+    "phone": "(718) 252-3000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.mountsinai.org/locations/emergency-medicine",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "nyu-perelman-ed",
+    "name": "Ronald O. Perelman Center for Emergency Services",
+    "city": "New York",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "570 First Avenue, New York, NY 10016",
+    "coordinates": {
+      "lat": 40.742695,
+      "lon": -73.97422
+    },
+    "phone": "(212) 263-5550",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://nyulangone.org/care-services/emergency-care",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "nyu-brooklyn-ed",
+    "name": "NYU Langone Hospital—Brooklyn Emergency Department",
+    "city": "Brooklyn",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "150 55th Street, Brooklyn, NY 11220",
+    "coordinates": {
+      "lat": 40.646899,
+      "lon": -74.020964
+    },
+    "phone": "(718) 630-7185",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://nyulangone.org/locations/directory/brooklyn",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "nyu-cobble-hill-ed",
+    "name": "NYU Langone Health—Cobble Hill Emergency Department",
+    "city": "Brooklyn",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "70 Atlantic Avenue, Brooklyn, NY 11201",
+    "coordinates": {
+      "lat": 40.691066,
+      "lon": -73.99757
+    },
+    "phone": "(646) 754-7900",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://nyulangone.org/locations/directory/brooklyn",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "interfaith-ed",
+    "name": "One Brooklyn Health Interfaith Emergency Department",
+    "city": "Brooklyn",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "1545 Atlantic Avenue, Brooklyn, NY 11213",
+    "coordinates": {
+      "lat": 40.678022,
+      "lon": -73.938511
+    },
+    "phone": "(718) 613-4000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://onebrooklynhealth.org/services/emergency-care",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "montefiore-weiler-ed",
+    "name": "Montefiore Weiler Emergency Department",
+    "city": "Bronx",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "1825 Eastchester Road, Bronx, NY 10461",
+    "coordinates": {
+      "lat": 40.850272,
+      "lon": -73.844943
+    },
+    "phone": "(718) 904-3333",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.montefiore.org/emergency-medicine",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "montefiore-wakefield-ed",
+    "name": "Montefiore Wakefield Emergency Department",
+    "city": "Bronx",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult emergency department",
+    "pediatricSpecific": false,
+    "patientGroups": [
+      "adult"
+    ],
+    "address": "600 East 233rd Street, Bronx, NY 10466",
+    "coordinates": {
+      "lat": 40.894588,
+      "lon": -73.861319
+    },
+    "phone": "(718) 920-9000",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://www.montefiore.org/emergency-medicine",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
+  },
+  {
+    "id": "maimonides-bay-ridge-ed",
+    "name": "Maimonides Bay Ridge Emergency Department",
+    "city": "Brooklyn",
+    "state": "NY",
+    "type": "emergency",
+    "typeLabel": "Adult and pediatric emergency department",
+    "pediatricSpecific": true,
+    "patientGroups": [
+      "adult",
+      "pediatric"
+    ],
+    "address": "9036 7th Avenue, Brooklyn, NY 11209",
+    "coordinates": {
+      "lat": 40.615865,
+      "lon": -74.022361
+    },
+    "phone": "(718) 283-2200",
+    "age": {
+      "minMonths": null,
+      "maxMonths": null,
+      "verifiedLimits": false
+    },
+    "capabilities": [
+      "illness",
+      "breathing",
+      "injury",
+      "wound",
+      "stomach",
+      "other"
+    ],
+    "hours": {
+      "kind": "always",
+      "label": "Open 24 hours",
+      "days": {}
+    },
+    "highlights": [
+      "Adult and pediatric emergency care confirmed",
+      "Emergency department available 24 hours",
+      "Official provider and federal records linked"
+    ],
+    "sourceUrl": "https://maimo.org/treatments-care/emergency-medicine/bay-ridge-emergency-department/",
+    "quality": {
+      "note": "No comparable public emergency-care quality score is displayed.",
+      "url": null
+    },
+    "access": {
+      "uninsuredWelcome": true,
+      "slidingFee": false,
+      "noOneTurnedAway": true,
+      "charityCare": false,
+      "flatFee": null,
+      "languages": [],
+      "note": "Federal emergency-care protections require an appropriate medical screening examination regardless of ability to pay. Insurance participation and financial-assistance terms still require verification.",
+      "sourceUrl": "https://www.cms.gov/medicare/regulations-guidance/legislation/emergency-medical-treatment-labor-act"
+    },
+    "verification": {
+      "status": "verified-with-unknowns",
+      "reviewedAt": "2026-09-28",
+      "reviewBy": "2026-12-28",
+      "method": "cms-match-provider-source-and-address-geocode"
+    }
   }
 ];

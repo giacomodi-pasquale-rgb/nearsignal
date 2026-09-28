@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-28T12:00:00.000Z",
-  "datasetVersion": "2026-09-28.1",
+  "generatedAt": "2026-09-28T19:46:00.813Z",
+  "datasetVersion": "2026-09-28.2",
   "tiers": {
     "officiallyIndexed": {
       "total": 22292,
@@ -16,9 +16,9 @@
       "patientVisible": false
     },
     "decisionReady": {
-      "total": 116,
-      "evidenceRecords": 141,
-      "reviewDueSoon": 3,
+      "total": 148,
+      "evidenceRecords": 243,
+      "reviewDueSoon": 0,
       "definition": "NearSignal records that passed release-blocking identity, location, care-setting, patient-group, capability, contact and source checks.",
       "patientVisible": true
     }

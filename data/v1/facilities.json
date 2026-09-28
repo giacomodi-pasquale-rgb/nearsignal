@@ -721,8 +721,8 @@
       },
       "verification": {
         "status": "verified",
-        "reviewedAt": "2026-08-17",
-        "reviewBy": "2026-09-17",
+        "reviewedAt": "2026-09-28",
+        "reviewBy": "2026-12-28",
         "method": "authoritative-provider-source"
       },
       "evidence": [
@@ -738,7 +738,7 @@
             "capabilities",
             "highlights"
           ],
-          "checkedAt": "2026-08-17"
+          "checkedAt": "2026-09-28"
         }
       ]
     },
@@ -836,8 +836,8 @@
       },
       "verification": {
         "status": "verified",
-        "reviewedAt": "2026-08-17",
-        "reviewBy": "2026-09-17",
+        "reviewedAt": "2026-09-28",
+        "reviewBy": "2026-12-28",
         "method": "authoritative-provider-source"
       },
       "evidence": [
@@ -851,7 +851,7 @@
             "capabilities",
             "highlights"
           ],
-          "checkedAt": "2026-08-17"
+          "checkedAt": "2026-09-28"
         },
         {
           "id": "afc-contact",
@@ -862,7 +862,7 @@
             "contact",
             "hours"
           ],
-          "checkedAt": "2026-08-17"
+          "checkedAt": "2026-09-28"
         }
       ]
     },
@@ -960,8 +960,8 @@
       },
       "verification": {
         "status": "verified-with-unknowns",
-        "reviewedAt": "2026-08-17",
-        "reviewBy": "2026-09-17",
+        "reviewedAt": "2026-09-28",
+        "reviewBy": "2026-12-28",
         "method": "authoritative-provider-source"
       },
       "evidence": [
@@ -977,7 +977,7 @@
             "hours",
             "highlights"
           ],
-          "checkedAt": "2026-08-17"
+          "checkedAt": "2026-09-28"
         }
       ]
     },

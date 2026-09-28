@@ -1,5 +1,5 @@
 import { RoutingService, presentRoute } from './routing.js?v=3';
-import { currentLanguage, format, initLanguage, t } from './i18n.js?v=22';
+import { currentLanguage, format, initLanguage, t } from './i18n.js?v=24';
 import { translateBriefTextToEnglish } from './brief-translation.js?v=3';
 import { accessEvidence, createArrivalCode, outcomeCount, saveOutcome } from './access-insight.js?v=1';
 import { buildDemoConfirmation, nextAlternative } from './verified-arrival.js?v=1';
