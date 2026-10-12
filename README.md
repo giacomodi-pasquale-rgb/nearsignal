@@ -1,5 +1,7 @@
 # NearSignal v0.8 Urgent & Emergency Navigation
 
+Pilot and partnership enquiries: [giacomo.di-pasquale@wagner.edu](mailto:giacomo.di-pasquale@wagner.edu). Start with one community or health-system market to verify local access information and evaluate successful connections, failed attempts, understanding, safety and staff burden. A national record index is not equivalent to individually reviewed recommendations everywhere.
+
 NearSignal is a production-oriented, mobile-first foundation for national care navigation for adults and children. Its decision-ready network began in the Northeast and now includes a rigorously reviewed CommonSpirit access cohort in six additional states; the data-operations layer seeds a nationwide evidence review queue.
 
 ## What is real

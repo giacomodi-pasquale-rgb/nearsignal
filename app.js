@@ -1,5 +1,5 @@
 import { RoutingService, presentRoute } from './routing.js?v=3';
-import { currentLanguage, format, initLanguage, t } from './i18n.js?v=24';
+import { currentLanguage, format, initLanguage, t } from './i18n.js?v=25';
 import { translateBriefTextToEnglish } from './brief-translation.js?v=3';
 import { accessEvidence, createArrivalCode, outcomeCount, saveOutcome } from './access-insight.js?v=1';
 import { buildDemoConfirmation, nextAlternative } from './verified-arrival.js?v=1';
@@ -209,10 +209,10 @@ document.getElementById('tryDemo').addEventListener('click', () => {
   document.getElementById('stateSelect').value = experienceMode === 'nyc' ? 'NY' : 'NJ';
   document.querySelector('[name=need][value=illness]').checked = true;
   document.querySelector('[name=emergency][value=no]').checked = true;
-  document.querySelectorAll('[name=accessNeed]').forEach((input) => { input.checked = experienceMode !== 'nyc' && ['uninsured', 'low-cost'].includes(input.value); });
-  state.location = experienceMode === 'nyc' ? { lat: 40.6315, lon: -74.1057 } : { lat: 40.7357, lon: -74.1724 };
+  document.querySelectorAll('[name=accessNeed]').forEach((input) => { input.checked = ['uninsured', 'low-cost', ...(experienceMode === 'nyc' ? ['language'] : [])].includes(input.value); });
+  state.location = experienceMode === 'nyc' ? { lat: 40.633, lon: -74.1365 } : { lat: 40.7357, lon: -74.1724 };
   state.locationSource = 'demo';
-  state.locationZip = experienceMode === 'nyc' ? '10310' : '07102';
+  state.locationZip = experienceMode === 'nyc' ? '10302' : '07102';
   state.demoScenario = true;
   showCareOptions(document.getElementById('showCareOptions'));
 });
