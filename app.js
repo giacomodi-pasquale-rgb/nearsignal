@@ -206,13 +206,13 @@ document.getElementById('tryDemo').addEventListener('click', () => {
   document.getElementById('childAge').hidden = false;
   document.getElementById('ageValue').value = '5';
   document.getElementById('ageUnit').value = 'years';
-  document.getElementById('stateSelect').value = experienceMode === 'nyc' ? 'NY' : 'NJ';
+  document.getElementById('stateSelect').value = experienceMode === 'nyc' ? 'NY' : 'NV';
   document.querySelector('[name=need][value=illness]').checked = true;
   document.querySelector('[name=emergency][value=no]').checked = true;
   document.querySelectorAll('[name=accessNeed]').forEach((input) => { input.checked = ['uninsured', 'low-cost', ...(experienceMode === 'nyc' ? ['language'] : [])].includes(input.value); });
-  state.location = experienceMode === 'nyc' ? { lat: 40.633, lon: -74.1365 } : { lat: 40.7357, lon: -74.1724 };
+  state.location = experienceMode === 'nyc' ? { lat: 40.633, lon: -74.1365 } : { lat: 36.015, lon: -115.105 };
   state.locationSource = 'demo';
-  state.locationZip = experienceMode === 'nyc' ? '10302' : '07102';
+  state.locationZip = experienceMode === 'nyc' ? '10302' : '89052';
   state.demoScenario = true;
   showCareOptions(document.getElementById('showCareOptions'));
 });
